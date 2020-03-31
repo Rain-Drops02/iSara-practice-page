@@ -16,51 +16,107 @@ body {
   font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
 }
 
-/*ヘッダー
-
-@mixin card($header-font) {
-    font-size: 14px;
-    line-height: 22px;
-}
-
+/*ヘッダー*/
 .container {
-    width: 1170px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #header-contents {
-    display: flex;
-    justify-content: space-between;
-
-    #header-left {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #header-logo {
-        max-width: 100%;
-        width: 130px;
-        height: 45px;
-        margin: 20px 5px 50px;
-    }
-
-    #header-comment {
-        @include card($header-font);
-        color: #333333;
-        font-weight: 600;
-        margin-top: 40px;
-    }
-
-    #header-btn {
-        @include card($header-font);
-        background-color: #DA6B64;
-        color: #ffffff;
-        
-    }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75px;
 }
 
+#header-contents #header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 
+#header-contents #header-logo {
+  max-width: 100%;
+  width: 130px;
+  height: 45px;
+  margin: 20px 5px 50px;
+}
+
+#header-contents #header-comment {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+#header-contents #header-btn {
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #DA6B64;
+  color: #ffffff;
+  padding: 13px 40px;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+#header-contents #header-btn:hover {
+  background-color: red;
+}
+
+/*トップ部分*/
+#top-contents #top-message #top-img {
+  position: relative;
+}
+
+#top-contents #top-message #top-img {
+  width: 1170px;
+  max-width: 100%;
+  height: auto;
+}
+
+#top-contents #top-message .top-comment1 {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #333333;
+}
+
+#top-contents #top-message .top-comment2 {
+  position: absolute;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #333333;
+}
+
+#top-contents #top-message .top-comment3 {
+  position: absolute;
+}
+
+#top-contents #top-message .top-comment4 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333333;
+}
+
+#top-contents #top-message .top-comment5 {
+  position: absolute;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333333;
+}
 
 /*以下リセットcss*/
 html, body, div, span, applet, object, iframe,
