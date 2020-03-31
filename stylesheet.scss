@@ -16,7 +16,7 @@ body {
 
 /*ヘッダー*/
 
-@mixin card($header-font) {
+@mixin header-font {
     font-size: 14px;
     line-height: 22px;
 }
@@ -30,6 +30,7 @@ body {
 #header-contents {
     display: flex;
     justify-content: space-between;
+    height: 75px;
 
     #header-left {
         display: flex;
@@ -44,17 +45,83 @@ body {
     }
 
     #header-comment {
-        @include card($header-font);
+        @include header-font;
         color: #333333;
         font-weight: 600;
         margin-top: 40px;
     }
 
     #header-btn {
-        @include card($header-font);
+        @include header-font;
         background-color: #DA6B64;
         color: #ffffff;
+        padding: 13px 40px;
+        border-radius: 100px;
+        display: inline-block;
+        margin: 15px 0;
+
+        &:hover {
+            background-color: red;
+        }
         
+    }
+
+}
+
+/*トップ部分*/
+
+@mixin top-commentA {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #333333;
+}
+
+@mixin top-commentB {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+}
+
+#top-contents {
+
+    #top-message {
+        
+        
+        #top-img {
+            position: relative;
+        }
+    
+        #top-img {
+            width: 1170px;
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .top-comment1 {
+            position: absolute;
+            @include top-commentA;
+        }
+
+        .top-comment2 {
+            position: absolute;
+            @include top-commentA;
+        }
+
+        .top-comment3 {
+            position: absolute;
+        }
+
+        .top-comment4 {
+            position: absolute;
+            @include top-commentB;
+        }
+        
+        .top-comment5 {
+            position: absolute;
+            @include top-commentB;
+        }
     }
 }
 
