@@ -102,25 +102,25 @@ body {
             object-fit: cover;
         }
 
-        p {
+        .on-img {
             position: absolute;
         }
     
-        .top-comment1 {
+        #top-comment1 {
             @include top-commentA;
             @include top-comment-position;
-            top: 80px;
+            top: 90px;
             
         }
 
-        .top-comment2 {
+        #top-comment2 {
             @include top-commentA;
             @include top-comment-position;
-            top: 130px;
+            top: 140px;
         }
 
-        .top-comment3 {
-            width: 300px;
+        #top-comment3 {
+            width: 315px;
         }
 
         #t-c3-wrap {
@@ -128,17 +128,21 @@ body {
             top: 200px;
         }
 
-        .top-comment4 {
+        #top-comment4 {
             @include top-commentB;
             @include top-comment-position;
             top: 340px;
         }
         
-        .top-comment5 {
+        #top-comment5 {
             @include top-commentB;
             @include top-comment-position;
             top: 370px;
         }
+    }
+
+    #contact {
+        text-align: center;
     }
 }
 
