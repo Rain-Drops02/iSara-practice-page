@@ -84,43 +84,60 @@ body {
     color: #333333;
 }
 
+@mixin top-comment-position {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
 #top-contents {
 
     #top-message {
-        
-        
-        #top-img {
-            position: relative;
-        }
+        position: relative;
     
         #top-img {
-            width: 1170px;
-            max-width: 100%;
-            height: auto;
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        p {
+            position: absolute;
         }
     
         .top-comment1 {
-            position: absolute;
             @include top-commentA;
+            @include top-comment-position;
+            top: 80px;
+            
         }
 
         .top-comment2 {
-            position: absolute;
             @include top-commentA;
+            @include top-comment-position;
+            top: 130px;
         }
 
         .top-comment3 {
-            position: absolute;
+            width: 300px;
+        }
+
+        #t-c3-wrap {
+            @include top-comment-position;
+            top: 200px;
         }
 
         .top-comment4 {
-            position: absolute;
             @include top-commentB;
+            @include top-comment-position;
+            top: 340px;
         }
         
         .top-comment5 {
-            position: absolute;
             @include top-commentB;
+            @include top-comment-position;
+            top: 370px;
         }
     }
 }
