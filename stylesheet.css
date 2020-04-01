@@ -83,11 +83,11 @@ body {
      object-fit: cover;
 }
 
-#top-contents #top-message p {
+#top-contents #top-message .on-img {
   position: absolute;
 }
 
-#top-contents #top-message .top-comment1 {
+#top-contents #top-message #top-comment1 {
   font-size: 28px;
   font-weight: 600;
   line-height: 45px;
@@ -96,10 +96,10 @@ body {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  top: 80px;
+  top: 90px;
 }
 
-#top-contents #top-message .top-comment2 {
+#top-contents #top-message #top-comment2 {
   font-size: 28px;
   font-weight: 600;
   line-height: 45px;
@@ -108,11 +108,11 @@ body {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  top: 130px;
+  top: 140px;
 }
 
-#top-contents #top-message .top-comment3 {
-  width: 300px;
+#top-contents #top-message #top-comment3 {
+  width: 315px;
 }
 
 #top-contents #top-message #t-c3-wrap {
@@ -123,7 +123,7 @@ body {
   top: 200px;
 }
 
-#top-contents #top-message .top-comment4 {
+#top-contents #top-message #top-comment4 {
   font-size: 20px;
   font-weight: 600;
   line-height: 22px;
@@ -135,7 +135,7 @@ body {
   top: 340px;
 }
 
-#top-contents #top-message .top-comment5 {
+#top-contents #top-message #top-comment5 {
   font-size: 20px;
   font-weight: 600;
   line-height: 22px;
@@ -145,6 +145,10 @@ body {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   top: 370px;
+}
+
+#top-contents #contact {
+  text-align: center;
 }
 
 /*以下リセットcss*/
