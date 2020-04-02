@@ -72,6 +72,8 @@ body {
 }
 
 /*トップ部分*/
+/*top-message部分の@mixin*/
+/*contact部分の@mixin*/
 #top-contents #top-message {
   position: relative;
 }
@@ -149,6 +151,44 @@ body {
 
 #top-contents #contact {
   text-align: center;
+  background-color: #EBB94D;
+  height: auto;
+  width: 100%;
+}
+
+#top-contents #contact #contact-comment1 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#top-contents #contact #contact-comment2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#top-contents #contact #schedule1 {
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#top-contents #contact #schedule2 {
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#top-contents #contact #schedule3 {
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 /*以下リセットcss*/
@@ -170,7 +210,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
 
 /* HTML5 display-role reset for older browsers */
