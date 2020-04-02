@@ -70,6 +70,8 @@ body {
 
 /*トップ部分*/
 
+/*top-message部分の@mixin*/
+
 @mixin top-commentA {
     font-size: 28px;
     font-weight: 600;
@@ -89,6 +91,22 @@ body {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
+}
+
+/*contact部分の@mixin*/
+
+@mixin under-top1 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+@mixin under-top2 {
+    font-size: 21px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 #top-contents {
@@ -143,6 +161,33 @@ body {
 
     #contact {
         text-align: center;
+        background-color: #EBB94D;
+        height: auto;
+        width: 100%;
+
+        #contact-comment1 {
+            @include under-top1;
+        }
+
+        #contact-comment2 {
+            @include under-top1;
+        }
+
+        #schedule1 {
+            @include under-top2;
+
+        }
+
+        #schedule2 {
+            @include under-top2;
+
+        }
+
+        #schedule3 {
+            @include under-top2;
+
+        }
+
     }
 }
 
@@ -168,8 +213,9 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: bottom;
 }
+    
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
