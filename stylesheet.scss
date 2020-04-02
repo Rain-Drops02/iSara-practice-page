@@ -100,6 +100,7 @@ body {
     line-height: 32px;
     font-weight: 600;
     color: #ffffff;
+    padding-bottom: 15px;
 }
 
 @mixin under-top2 {
@@ -107,6 +108,7 @@ body {
     line-height: 34px;
     font-weight: 600;
     color: #ffffff;
+    padding-bottom: 45px;
 }
 
 #top-contents {
@@ -167,10 +169,41 @@ body {
 
         #contact-comment1 {
             @include under-top1;
+            padding-top: 35px;
         }
 
         #contact-comment2 {
             @include under-top1;
+        }
+
+        #contact-comment3 {
+            font-family: "Courier New";
+            font-size: 18px;
+            line-height: 29px;
+            font-weight: bold;
+            color: #c7254e;
+            background-color: #ffffff;
+            display: inline-block;
+            border-radius: 4px;
+            padding: 2px 4px;
+            margin-top: 8px;
+        }
+
+        #contact-btn {
+            font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+            font-size: 28px;
+            line-height: 45px;
+            font-weight: 600;
+            background-color: #DA6B64;
+            color: #ffffff;
+            padding: 35px 300px;
+            border-radius: 100px;
+            display: inline-block;
+            margin: 50px 0 70px 0;
+
+            &:hover {
+                background-color: red;
+            }
         }
 
         #schedule1 {
