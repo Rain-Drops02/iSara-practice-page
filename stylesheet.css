@@ -227,6 +227,40 @@ body {
   padding-bottom: 45px;
 }
 
+/*intro*/
+#intro {
+  text-align: center;
+}
+
+#intro #intro-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  padding: 40px;
+}
+
+#intro #intro-title .intro-title-span {
+  font-size: 60px;
+  padding: 40px 30px;
+}
+
+#intro .intro-content {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  padding-bottom: 40px;
+  font-weight: 300;
+}
+
+#intro .intro-content #intro-content-span {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  padding-bottom: 40px;
+  font-weight: 700;
+}
+
 /*以下リセットcss*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
