@@ -227,7 +227,7 @@ body {
   padding-bottom: 45px;
 }
 
-/*intro*/
+/*エンジニアとして本当の自由を手に入れるためには  intro*/
 #intro {
   text-align: center;
 }
@@ -270,8 +270,11 @@ body {
      object-fit: cover;
 }
 
+/*ノマド育成講座イサラとは  desc部分*/
 #desc {
   text-align: center;
+  background-color: #FEF5E0;
+  padding-bottom: 70px;
 }
 
 #desc #desc-title {
@@ -291,21 +294,38 @@ body {
   font-size: 20px;
   line-height: 32px;
   color: #333333;
-  font-weight: 600;
+  font-weight: bold;
+  /*確認  カラーも確認*/
+  padding-bottom: 40px;
 }
 
 #desc #desc-detail {
   padding: 40px 80px 35px 80px;
+  border: solid 2px #EBB94D;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
-#desc #desc-detail #skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 40px 0 70px 0;
+#desc #desc-detail #desc-detail-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  font-weight: bold;
+  /*確認  カラーも確認*/
+  margin-bottom: 30px;
+}
+
+#desc #desc-detail #skills .skill {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+#desc #desc-detail #skills .skills-comment {
+  font-size: 12px;
+  line-height: 19px;
+  color: #333333;
+  font-weight: 300;
+  padding-top: 14px;
 }
 
 /*以下リセットcss*/
