@@ -224,7 +224,7 @@ body {
     }
 }
 
-/*intro*/
+/*エンジニアとして本当の自由を手に入れるためには  intro*/
 
 @mixin intro-content {
     font-size: 20px;
@@ -277,8 +277,26 @@ body {
     
 }
 
+/*ノマド育成講座イサラとは  desc部分*/
+
+@mixin desc-bold-p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    font-weight: bold;/*確認  カラーも確認*/
+}
+
+@mixin skills-comment {
+    font-size: 12px;
+    line-height: 19px;
+    color: #333333;
+    font-weight: 300;
+}
+
 #desc {
     text-align: center;
+    background-color: #FEF5E0;
+    padding-bottom: 70px;
 
     #desc-title {
         @include sub-title;
@@ -289,19 +307,34 @@ body {
     }
 
     #desc-summary {
-        font-size: 20px;
-        line-height: 32px;
-        color: #333333;
-        font-weight: 600;
+        @include desc-bold-p;
+        padding-bottom: 40px;
     }
 
     #desc-detail {
         padding: 40px 80px 35px 80px;
+        border: solid 2px #EBB94D;
+        border-radius: 5px;
+        background-color: #ffffff;
+
+        #desc-detail-title {
+            @include desc-bold-p;
+            margin-bottom: 30px;
+        }
 
         #skills {
-            display: flex;
-            justify-content: space-evenly;
-            margin: 40px 0 70px 0;
+            
+            .skill {
+                display: inline-block;
+                padding: 0 20px;
+            }
+
+            .skills-comment {
+                @include skills-comment;
+                padding-top: 14px;
+                
+            }
+            
         }
 
     }
