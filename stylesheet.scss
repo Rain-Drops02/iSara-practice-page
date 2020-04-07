@@ -234,7 +234,7 @@ body {
 
 }
 
-@mixin sub-title-span {
+@mixin sub-title-span {/*確認*/
     font-size: 60px;
     padding: 60px;
 }
@@ -251,7 +251,7 @@ body {
     text-align: center;
 
     #intro-title {
-        @include sub-title;
+        @include sub-title;/*確認*/
 
         .sub-title-span {
             @include sub-title-span;
