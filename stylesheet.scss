@@ -68,6 +68,8 @@ body {
 
 }
 
+
+
 /*トップ部分*/
 
 /*top-message部分の@mixin*/
@@ -86,7 +88,7 @@ body {
     color: #333333;
 }
 
-@mixin top-comment-position {
+@mixin on-img-position {
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -128,14 +130,14 @@ body {
     
         #top-comment1 {
             @include top-commentA;
-            @include top-comment-position;
+            @include on-img-position;
             top: 90px;
             
         }
 
         #top-comment2 {
             @include top-commentA;
-            @include top-comment-position;
+            @include on-img-position;
             top: 140px;
         }
 
@@ -144,19 +146,19 @@ body {
         }
 
         #t-c3-wrap {
-            @include top-comment-position;
+            @include on-img-position;
             top: 200px;
         }
 
         #top-comment4 {
             @include top-commentB;
-            @include top-comment-position;
+            @include on-img-position;
             top: 340px;
         }
         
         #top-comment5 {
             @include top-commentB;
-            @include top-comment-position;
+            @include on-img-position;
             top: 370px;
         }
     }
@@ -277,7 +279,7 @@ body {
     
 }
 
-/*ノマド育成講座イサラとは  desc部分*/
+/*ノマド育成講座イサラとは  desc*/
 
 @mixin desc-bold-p {
     font-size: 20px;
@@ -340,6 +342,78 @@ body {
     }
 
    
+}
+
+/*isaraで基本的なプログラミングスキルは教えません  contents1*/
+
+@mixin programme-number {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #EBB94D;/*確認*/
+    padding: 5px 125px 10px 125px;
+    margin: 30px 30px 35px 30px;
+}
+
+@mixin programme-period {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+@mixin programme-action {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #000000;
+    padding: 25px 0 40px;
+}
+
+
+#contents1 {
+    position: relative;
+
+    #contents1-img {
+        width: 100%;
+        height: 440px;
+        object-fit: cover;
+       
+    }
+
+    .contents1-on-img {
+        position: absolute;
+    }
+
+    #contents1-title {
+        @include on-img-position;
+    }
+
+    #programme-wrap {
+        display: inline-block;
+        text-align: center;
+
+        .programme {
+            background-color: #ffffff;
+
+            .programme-number {
+                @include programme-number;
+            }
+
+            .programme-period {
+                @include programme-period;
+            }
+
+            .programme-action {
+                @include programme-action;
+            }
+        }
+    }
+
+    #programme-note {
+        text-align: center;
+    }
 }
 
 
