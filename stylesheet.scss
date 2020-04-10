@@ -1,453 +1,422 @@
+@charset "UTF-8";
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 * {
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+  font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
 }
 
 /*ヘッダー*/
-
-@mixin header-font {
-    font-size: 14px;
-    line-height: 22px;
-}
-
 .container {
-    width: 1170px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #header-contents {
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-
-    #header-left {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    #header-logo {
-        max-width: 100%;
-        width: 130px;
-        height: 45px;
-        margin: 20px 5px 50px;
-    }
-
-    #header-comment {
-        @include header-font;
-        color: #333333;
-        font-weight: 600;
-        margin-top: 40px;
-    }
-
-    #header-btn {
-        @include header-font;
-        background-color: #DA6B64;
-        color: #ffffff;
-        padding: 13px 40px;
-        border-radius: 100px;
-        display: inline-block;
-        margin: 15px 0;
-
-        &:hover {
-            background-color: red;
-        }
-        
-    }
-
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 75px;
 }
 
+#header-contents #header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 
+#header-contents #header-logo {
+  max-width: 100%;
+  width: 130px;
+  height: 45px;
+  margin: 20px 5px 50px;
+}
+
+#header-contents #header-comment {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+#header-contents #header-btn {
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #DA6B64;
+  color: #ffffff;
+  padding: 13px 40px;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 15px 0;
+}
+
+#header-contents #header-btn:hover {
+  background-color: red;
+}
 
 /*トップ部分*/
-
 /*top-message部分の@mixin*/
-
-@mixin top-commentA {
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 45px;
-    color: #333333;
-}
-
-@mixin top-commentB {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-    color: #333333;
-}
-
-@mixin on-img-position {
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-}
-
 /*contact部分の@mixin*/
-
-@mixin main-font-W {
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: 600;
-    color: #ffffff;
-    
+#top-contents #top-message {
+  position: relative;
 }
 
-@mixin under-top {
-    font-size: 21px;
-    line-height: 34px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-bottom: 45px;
+#top-contents #top-message #top-img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-#top-contents {
+#top-contents #top-message .on-img {
+  position: absolute;
+}
 
-    #top-message {
-        position: relative;
-    
-        #top-img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-        }
+#top-contents #top-message #top-comment1 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #333333;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 90px;
+}
 
-        .on-img {
-            position: absolute;
-        }
-    
-        #top-comment1 {
-            @include top-commentA;
-            @include on-img-position;
-            top: 90px;
-            
-        }
+#top-contents #top-message #top-comment2 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #333333;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 140px;
+}
 
-        #top-comment2 {
-            @include top-commentA;
-            @include on-img-position;
-            top: 140px;
-        }
+#top-contents #top-message #top-comment3 {
+  width: 315px;
+}
 
-        #top-comment3 {
-            width: 315px;
-        }
+#top-contents #top-message #t-c3-wrap {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 200px;
+}
 
-        #t-c3-wrap {
-            @include on-img-position;
-            top: 200px;
-        }
+#top-contents #top-message #top-comment4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333333;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 340px;
+}
 
-        #top-comment4 {
-            @include top-commentB;
-            @include on-img-position;
-            top: 340px;
-        }
-        
-        #top-comment5 {
-            @include top-commentB;
-            @include on-img-position;
-            top: 370px;
-        }
-    }
+#top-contents #top-message #top-comment5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #333333;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  top: 370px;
+}
 
-    #contact {
-        text-align: center;
-        background-color: #EBB94D;
-        height: auto;
-        width: 100%;
+#top-contents #contact {
+  text-align: center;
+  background-color: #EBB94D;
+  height: auto;
+  width: 100%;
+}
 
-        #contact-comment1 {
-            @include main-font-W;
-            padding-top: 35px;
-            padding-bottom: 15px;
-        }
+#top-contents #contact #contact-comment1 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 15px;
+}
 
-        #contact-comment2 {
-            @include main-font-W;
-            padding-bottom: 15px;
-        }
+#top-contents #contact #contact-comment2 {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-bottom: 15px;
+}
 
-        #contact-comment3 {
-            font-family: "Courier New";
-            font-size: 18px;
-            line-height: 29px;
-            font-weight: bold;
-            color: #c7254e;
-            background-color: #ffffff;
-            display: inline-block;
-            border-radius: 4px;
-            padding: 2px 4px;
-            margin-top: 8px;
-        }
+#top-contents #contact #contact-comment3 {
+  font-family: "Courier New";
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: bold;
+  color: #c7254e;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin-top: 8px;
+}
 
-        #contact-btn {
-            font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
-            font-size: 28px;
-            line-height: 45px;
-            font-weight: 600;
-            background-color: #DA6B64;
-            color: #ffffff;
-            padding: 35px 300px;
-            border-radius: 100px;
-            display: inline-block;
-            margin: 50px 0 70px 0;
+#top-contents #contact #contact-btn {
+  font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+  font-size: 28px;
+  line-height: 45px;
+  font-weight: 600;
+  background-color: #DA6B64;
+  color: #ffffff;
+  padding: 35px 300px;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 50px 0 70px 0;
+}
 
-            &:hover {
-                background-color: red;
-            }
-        }
+#top-contents #contact #contact-btn:hover {
+  background-color: red;
+}
 
-        #schedule1 {
-            @include under-top;
+#top-contents #contact #schedule1 {
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-bottom: 45px;
+}
 
-        }
+#top-contents #contact #schedule2 {
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-bottom: 45px;
+}
 
-        #schedule2 {
-            @include under-top;
-
-        }
-
-        #schedule3 {
-            @include under-top;
-
-        }
-
-    }
+#top-contents #contact #schedule3 {
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #ffffff;
+  padding-bottom: 45px;
 }
 
 /*エンジニアとして本当の自由を手に入れるためには  intro*/
-
-@mixin main-font-B {
-    font-size: 20px;
-    line-height: 32px;
-    color: #333333;
-}
-
-@mixin sub-title-span {/*確認*/
-    font-size: 60px;
-    padding: 60px;
-}
-
-@mixin local-title-B {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 600;
-    color: #333333;
-    }
-
 #intro {
-    text-align: center;
+  text-align: center;
+}
 
-    #intro-title {
-        @include local-title-B;/*確認*/
-        padding: 0 80px;
+#intro #intro-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  /*確認*/
+  padding: 0 80px;
+}
 
-        .sub-title-span {
-            @include sub-title-span;
-        }
-    }
+#intro #intro-title .sub-title-span {
+  /*確認*/
+  font-size: 60px;
+  padding: 60px;
+}
 
-    .intro-content {
-        @include main-font-B;
-        margin-bottom: 40px;
-        font-weight: 300;
+#intro .intro-content {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
 
-        #intro-content-span {
-            @include main-font-B;
-            margin-bottom: 40px;
-            font-weight: 700;
-            background: linear-gradient(transparent 70%, #EBB94D 70%);
-        }
-    }
+#intro .intro-content #intro-content-span {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  margin-bottom: 40px;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(70%, #EBB94D));
+  background: linear-gradient(transparent 70%, #EBB94D 70%);
+}
 
-    #intro-img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-    
+#intro #intro-img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*ノマド育成講座イサラとは  desc*/
-
-
-@mixin skills-comment {
-    font-size: 12px;
-    line-height: 19px;
-    color: #333333;
-    font-weight: 300;
+#desc {
+  text-align: center;
+  background-color: #FEF5E0;
+  padding-bottom: 70px;
 }
 
-#desc {
-    text-align: center;
-    background-color: #FEF5E0;
-    padding-bottom: 70px;
+#desc #desc-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  padding: 0 80px;
+}
 
-    #desc-title {
-        @include local-title-B;
-        padding: 0 80px;
+#desc #desc-title .sub-title-span {
+  /*確認*/
+  font-size: 60px;
+  padding: 60px;
+}
 
-        .sub-title-span {
-            @include sub-title-span;
-        }
-    }
+#desc #desc-summary {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  font-weight: bold;
+  /*確認  カラーも確認*/
+  padding-bottom: 40px;
+}
 
-    #desc-summary {
-        @include main-font-B;
-        font-weight: bold;/*確認  カラーも確認*/
-        padding-bottom: 40px;
-    }
+#desc #desc-detail {
+  padding: 40px 80px 35px 80px;
+  border: solid 2px #EBB94D;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
 
-    #desc-detail {
-        padding: 40px 80px 35px 80px;
-        border: solid 2px #EBB94D;
-        border-radius: 5px;
-        background-color: #ffffff;
+#desc #desc-detail #desc-detail-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  font-weight: bold;
+  /*確認  カラーも確認*/
+  margin-bottom: 30px;
+}
 
-        #desc-detail-title {
-            @include main-font-B;
-            font-weight: bold;/*確認  カラーも確認*/
-            margin-bottom: 30px;
-        }
+#desc #desc-detail #skills .skill {
+  display: inline-block;
+  padding: 0 20px;
+}
 
-        #skills {
-            
-            .skill {
-                display: inline-block;
-                padding: 0 20px;
-            }
-
-            .skills-comment {
-                @include skills-comment;
-                padding-top: 14px;
-                
-            }
-            
-        }
-
-    }
-
-   
+#desc #desc-detail #skills .skills-comment {
+  font-size: 12px;
+  line-height: 19px;
+  color: #333333;
+  font-weight: 300;
+  padding-top: 14px;
 }
 
 /*isaraで基本的なプログラミングスキルは教えません  contents1*/
-
-@mixin programme-number {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: #EBB94D;/*確認*/
-    padding: 1px 125px;
-    margin: 25px 30px;
-    vertical-align: middle;
-    border-radius: 3px;
-}
-
-@mixin programme-period {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
-    color: #000000;
-}
-
-@mixin programme-action {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-    color: #000000;
-    padding: 15px 0 25px;
-}
-
-@mixin local-title-W {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 600;
-    color: #ffffff;
-    }
-
-@mixin main-font-W {
-    font-size: 20px;
-    line-height: 32px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
-
 #contents1 {
-    text-align: center;
-    
-    #contents1-img-wrap {
-        background-image: url(image/top-img.jpg);
-        height: 440px;
-        object-fit: cover;
-
-        #contents1-title {
-            @include local-title-W;
-            padding: 60px 0 25px;
-
-        }
-
-        .contents1-sub-title {
-            @include main-font-W;
-            padding-bottom: 15px;
-        }
-    
-
-        #programme-wrap {
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            margin-top: 10px;
-
-            .programme {
-                background-color: #ffffff;
-                border-radius: 5px;
-
-                .programme-number {
-                    @include programme-number;
-                }
-
-                .programme-period {
-                    @include programme-period;
-                }
-
-                .programme-action {
-                    @include programme-action;
-                }
-            }
-        }
-    }
-
-    #programme-note-wrap {
-        padding: 36px 0 40px;
-        background-color: #016EA9;
-    
-        .programme-note {
-            @include main-font-W;
-            padding: 2px 0;
-            
-        }
-    }
+  text-align: center;
 }
 
+#contents1 #contents1-img-wrap {
+  background-image: url(image/top-img.jpg);
+  height: 440px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
+#contents1 #contents1-img-wrap #contents1-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 60px 0 25px;
+}
+
+#contents1 #contents1-img-wrap .contents1-sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme .programme-number {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #EBB94D;
+  /*確認*/
+  padding: 1px 125px;
+  margin: 25px 30px;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme .programme-period {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme .programme-action {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #000000;
+  padding: 15px 0 25px;
+}
+
+#contents1 #programme-note-wrap {
+  padding: 36px 0 40px;
+  background-color: #016EA9;
+}
+
+#contents1 #programme-note-wrap .programme-note {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 2px 0;
+}
 
 /*以下リセットcss*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -457,40 +426,44 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-    vertical-align: bottom;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: bottom;
 }
-    
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
-
+/*# sourceMappingURL=stylesheet.css.map */
