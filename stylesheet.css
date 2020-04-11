@@ -161,8 +161,8 @@ body {
   line-height: 32px;
   font-weight: 600;
   color: #ffffff;
-  padding-bottom: 15px;
   padding-top: 35px;
+  padding-bottom: 15px;
 }
 
 #top-contents #contact #contact-comment2 {
@@ -237,8 +237,8 @@ body {
   line-height: 40px;
   font-weight: 600;
   color: #333333;
-  padding: 80px  0;
   /*確認*/
+  padding: 0 80px;
 }
 
 #intro #intro-title .sub-title-span {
@@ -272,7 +272,7 @@ body {
      object-fit: cover;
 }
 
-/*ノマド育成講座イサラとは  desc部分*/
+/*ノマド育成講座イサラとは  desc*/
 #desc {
   text-align: center;
   background-color: #FEF5E0;
@@ -284,7 +284,7 @@ body {
   line-height: 40px;
   font-weight: 600;
   color: #333333;
-  padding: 80px  0;
+  padding: 0 80px;
 }
 
 #desc #desc-title .sub-title-span {
@@ -329,6 +329,135 @@ body {
   color: #333333;
   font-weight: 300;
   padding-top: 14px;
+}
+
+/*isaraで基本的なプログラミングスキルは教えません  contents1*/
+#contents1 {
+  text-align: center;
+}
+
+#contents1 #contents1-img-wrap {
+  background-image: url(image/top-img.jpg);
+  height: 440px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#contents1 #contents1-img-wrap #contents1-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 60px 0 25px;
+}
+
+#contents1 #contents1-img-wrap .contents1-sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme .programme-number {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #EBB94D;
+  /*確認*/
+  padding: 1px 125px;
+  margin: 25px 30px;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme .programme-period {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #000000;
+}
+
+#contents1 #contents1-img-wrap #programme-wrap .programme .programme-action {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #000000;
+  padding: 15px 0 25px;
+}
+
+#contents1 #programme-note-wrap {
+  padding: 36px 0 40px;
+  background-color: #016EA9;
+}
+
+#contents1 #programme-note-wrap .programme-note {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 2px 0;
+}
+
+/*イサラで学べること*/
+#contents2 {
+  text-align: center;
+}
+
+#contents2 #contents2-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  padding: 65px 0 45px;
+}
+
+#contents2 #contents2-sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+}
+
+#contents2 #four-skills-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 850px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#contents2 #four-skills-wrap .four-skills {
+  width: 175px;
+  padding: 45px 0 35px;
+}
+
+#contents2 #contents2-note {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #333333;
+  padding-bottom: 50px;
 }
 
 /*以下リセットcss*/
