@@ -70,11 +70,11 @@ body {
     padding: 60px;
 }
 
-@mixin local-title-B {
+@mixin local-title($color) {
     font-size: 28px;
     line-height: 40px;
     font-weight: 600;
-    color: #333333;
+    color: $color;
 }
 
 
@@ -113,13 +113,6 @@ body {
     line-height: 26px;
     color: $color;
 }
-
-@mixin local-title-W {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 600;
-    color: #ffffff;
-    }
 
 
 .container {
@@ -297,7 +290,7 @@ body {
     text-align: center;
 
     #intro-title {
-        @include local-title-B;/*確認*/
+        @include local-title($black);/*確認*/
         padding: 40px 80px;
 
         .sub-title-span {
@@ -334,7 +327,7 @@ body {
     padding-bottom: 70px;
 
     #desc-title {
-        @include local-title-B;
+        @include local-title($black);
         padding: 40px 80px 70px 80px;
 
         .sub-title-span {
@@ -392,7 +385,7 @@ body {
         object-fit: cover;
 
         #contents1-title {
-            @include local-title-W;
+            @include local-title($white);
             padding: 60px 0 25px;
 
         }
@@ -450,7 +443,7 @@ body {
     text-align: center;
     
     #contents2-title {
-        @include local-title-B;
+        @include local-title($black);
         padding: 65px 0 45px;
 
     }
@@ -482,6 +475,8 @@ body {
     }
 }
 
+/*イサラの3つのメリット*/
+
 #contents3 {
     text-align: center;
     background-color: #FEF5E0;
@@ -495,7 +490,7 @@ body {
     }
 
     #contents3-title {
-        @include local-title-B;
+        @include local-title($black);
     }
 
     #three-merit-wrap {
@@ -517,6 +512,7 @@ body {
                 @include main-font($main-color);
                 font-weight: 700;
                 text-align: left;
+                padding: 10px 0 10px;
             }
 
             .three-merit-note {
@@ -558,6 +554,50 @@ body {
     #contents3-note {
         padding: 40px 0 55px;
 
+    }
+}
+
+/*創業メンバー*/
+
+#member {
+    background-image: url(image/top-img.jpg);
+    height: 1390px;
+    background-size: cover;
+
+    #profile-flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 910px;
+        max-width: 100%;
+        margin: 0 auto;
+
+        .profile-wrap {
+
+        
+
+            .profile-img {
+
+            }
+
+            .profile {
+                padding: 40px 40px 20px 40px;
+                border: solid 2px #ffffff;
+
+                .profile-position {
+
+                }
+
+                .profile-name {
+
+                }
+
+                .profile-detail {
+                    width: 280px;
+
+                }
+            }
+        }
     }
 }
 
