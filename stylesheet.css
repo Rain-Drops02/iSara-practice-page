@@ -463,6 +463,7 @@ body {
   padding-bottom: 50px;
 }
 
+/*イサラの3つのメリット*/
 #contents3 {
   text-align: center;
   background-color: #FEF5E0;
@@ -510,6 +511,7 @@ body {
   color: #EBB94D;
   font-weight: 700;
   text-align: left;
+  padding: 10px 0 10px;
 }
 
 #contents3 #three-merit-wrap .three-merit .three-merit-note {
@@ -551,6 +553,36 @@ body {
 
 #contents3 #contents3-note {
   padding: 40px 0 55px;
+}
+
+/*創業メンバー*/
+#member {
+  background-image: url(image/top-img.jpg);
+  height: 1390px;
+  background-size: cover;
+}
+
+#member #profile-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 910px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#member #profile-flex .profile-wrap .profile {
+  padding: 40px 40px 20px 40px;
+  border: solid 2px #ffffff;
+}
+
+#member #profile-flex .profile-wrap .profile .profile-detail {
+  width: 280px;
 }
 
 /*以下リセットcss*/
