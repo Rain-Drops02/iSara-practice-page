@@ -17,6 +17,11 @@ body {
 }
 
 /*ヘッダー*/
+/*トップ部分*/
+/*contact部分の@mixin*/
+/*エンジニアとして本当の自由を手に入れるためには  intro*/
+/*ノマド育成講座イサラとは  desc*/
+/*isaraで基本的なプログラミングスキルは教えません  contents1*/
 .container {
   width: 1170px;
   max-width: 100%;
@@ -72,8 +77,6 @@ body {
 }
 
 /*トップ部分*/
-/*top-message部分の@mixin*/
-/*contact部分の@mixin*/
 #top-contents #top-message {
   position: relative;
 }
@@ -159,8 +162,8 @@ body {
 #top-contents #contact #contact-comment1 {
   font-size: 20px;
   line-height: 32px;
-  font-weight: 600;
   color: #ffffff;
+  font-weight: 600;
   padding-top: 35px;
   padding-bottom: 15px;
 }
@@ -168,8 +171,8 @@ body {
 #top-contents #contact #contact-comment2 {
   font-size: 20px;
   line-height: 32px;
-  font-weight: 600;
   color: #ffffff;
+  font-weight: 600;
   padding-bottom: 15px;
 }
 
@@ -238,7 +241,7 @@ body {
   font-weight: 600;
   color: #333333;
   /*確認*/
-  padding: 0 80px;
+  padding: 40px 80px;
 }
 
 #intro #intro-title .sub-title-span {
@@ -284,7 +287,7 @@ body {
   line-height: 40px;
   font-weight: 600;
   color: #333333;
-  padding: 0 80px;
+  padding: 40px 80px 70px 80px;
 }
 
 #desc #desc-title .sub-title-span {
@@ -398,8 +401,8 @@ body {
 #contents1 #contents1-img-wrap #programme-wrap .programme .programme-action {
   font-size: 16px;
   line-height: 26px;
+  color: #333333;
   font-weight: 600;
-  color: #000000;
   padding: 15px 0 25px;
 }
 
@@ -458,6 +461,96 @@ body {
   font-weight: 600;
   color: #333333;
   padding-bottom: 50px;
+}
+
+#contents3 {
+  text-align: center;
+  background-color: #FEF5E0;
+}
+
+#contents3 #contents3-sub-title {
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  padding-top: 40px;
+}
+
+#contents3 #contents3-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+}
+
+#contents3 #three-merit-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0 55px;
+}
+
+#contents3 #three-merit-wrap .three-merit {
+  width: 360px;
+}
+
+#contents3 #three-merit-wrap .three-merit .three-merit-img {
+  width: 360px;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#contents3 #three-merit-wrap .three-merit .three-merit-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #EBB94D;
+  font-weight: 700;
+  text-align: left;
+}
+
+#contents3 #three-merit-wrap .three-merit .three-merit-note {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 300;
+  text-align: left;
+}
+
+#contents3 #cotents3-detail {
+  padding: 40px 200px 50px 200px;
+  border: solid 2px #EBB94D;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+#contents3 #cotents3-detail #contents3-detail-title {
+  font-size: 28px;
+  line-height: 45px;
+  font-weight: 600;
+  color: #ebb94d;
+}
+
+#contents3 #cotents3-detail #contents3-detail-sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  font-weight: 600;
+  padding: 15px 0 10px;
+}
+
+#contents3 #cotents3-detail .contents3-detail-note {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+}
+
+#contents3 #contents3-note {
+  padding: 40px 0 55px;
 }
 
 /*以下リセットcss*/
