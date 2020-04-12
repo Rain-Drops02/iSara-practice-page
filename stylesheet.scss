@@ -1,3 +1,5 @@
+@import "variables";
+
 a {
     text-decoration: none;
 }
@@ -20,6 +22,105 @@ body {
     font-size: 14px;
     line-height: 22px;
 }
+
+/*トップ部分*/
+
+@mixin top-commentA {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #333333;
+}
+
+@mixin top-commentB {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #333333;
+}
+
+@mixin on-img-position {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
+/*contact部分の@mixin*/
+
+@mixin under-top {
+    font-size: 21px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #ffffff;
+    padding-bottom: 45px;
+}
+
+
+/*エンジニアとして本当の自由を手に入れるためには  intro*/
+
+@mixin main-font($color) {
+    font-size: 20px;
+    line-height: 32px;
+    color: $color;
+}
+
+@mixin sub-title-span {/*確認*/
+    font-size: 60px;
+    padding: 60px;
+}
+
+@mixin local-title-B {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #333333;
+}
+
+
+/*ノマド育成講座イサラとは  desc*/
+
+@mixin skills-comment {
+    font-size: 12px;
+    line-height: 19px;
+    color: #333333;
+    font-weight: 300;
+}
+
+/*isaraで基本的なプログラミングスキルは教えません  contents1*/
+
+@mixin programme-number {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #EBB94D;/*確認*/
+    padding: 1px 125px;
+    margin: 25px 30px;
+    vertical-align: middle;
+    border-radius: 3px;
+}
+
+@mixin programme-period {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+@mixin article-note($color) {
+    font-size: 16px;
+    line-height: 26px;
+    color: $color;
+}
+
+@mixin local-title-W {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #ffffff;
+    }
+
 
 .container {
     width: 1170px;
@@ -71,47 +172,6 @@ body {
 
 
 /*トップ部分*/
-
-/*top-message部分の@mixin*/
-
-@mixin top-commentA {
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 45px;
-    color: #333333;
-}
-
-@mixin top-commentB {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 22px;
-    color: #333333;
-}
-
-@mixin on-img-position {
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-}
-
-/*contact部分の@mixin*/
-
-@mixin main-font-W {
-    font-size: 20px;
-    line-height: 32px;
-    font-weight: 600;
-    color: #ffffff;
-    
-}
-
-@mixin under-top {
-    font-size: 21px;
-    line-height: 34px;
-    font-weight: 600;
-    color: #ffffff;
-    padding-bottom: 45px;
-}
 
 #top-contents {
 
@@ -170,13 +230,15 @@ body {
         width: 100%;
 
         #contact-comment1 {
-            @include main-font-W;
+            @include main-font($white);
+            font-weight: 600;
             padding-top: 35px;
             padding-bottom: 15px;
         }
 
         #contact-comment2 {
-            @include main-font-W;
+            @include main-font($white);
+            font-weight: 600;
             padding-bottom: 15px;
         }
 
@@ -230,30 +292,13 @@ body {
 
 /*エンジニアとして本当の自由を手に入れるためには  intro*/
 
-@mixin main-font-B {
-    font-size: 20px;
-    line-height: 32px;
-    color: #333333;
-}
-
-@mixin sub-title-span {/*確認*/
-    font-size: 60px;
-    padding: 60px;
-}
-
-@mixin local-title-B {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 600;
-    color: #333333;
-    }
 
 #intro {
     text-align: center;
 
     #intro-title {
         @include local-title-B;/*確認*/
-        padding: 0 80px;
+        padding: 40px 80px;
 
         .sub-title-span {
             @include sub-title-span;
@@ -261,12 +306,12 @@ body {
     }
 
     .intro-content {
-        @include main-font-B;
+        @include main-font($black);
         margin-bottom: 40px;
         font-weight: 300;
 
         #intro-content-span {
-            @include main-font-B;
+            @include main-font($black);
             margin-bottom: 40px;
             font-weight: 700;
             background: linear-gradient(transparent 70%, #EBB94D 70%);
@@ -283,14 +328,6 @@ body {
 
 /*ノマド育成講座イサラとは  desc*/
 
-
-@mixin skills-comment {
-    font-size: 12px;
-    line-height: 19px;
-    color: #333333;
-    font-weight: 300;
-}
-
 #desc {
     text-align: center;
     background-color: #FEF5E0;
@@ -298,7 +335,7 @@ body {
 
     #desc-title {
         @include local-title-B;
-        padding: 0 80px;
+        padding: 40px 80px 70px 80px;
 
         .sub-title-span {
             @include sub-title-span;
@@ -306,7 +343,7 @@ body {
     }
 
     #desc-summary {
-        @include main-font-B;
+        @include main-font($black);
         font-weight: bold;/*確認  カラーも確認*/
         padding-bottom: 40px;
     }
@@ -318,7 +355,7 @@ body {
         background-color: #ffffff;
 
         #desc-detail-title {
-            @include main-font-B;
+            @include main-font($black);
             font-weight: bold;/*確認  カラーも確認*/
             margin-bottom: 30px;
         }
@@ -345,47 +382,6 @@ body {
 
 /*isaraで基本的なプログラミングスキルは教えません  contents1*/
 
-@mixin programme-number {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: #EBB94D;/*確認*/
-    padding: 1px 125px;
-    margin: 25px 30px;
-    vertical-align: middle;
-    border-radius: 3px;
-}
-
-@mixin programme-period {
-    font-size: 14px;
-    line-height: 22px;
-    font-weight: 600;
-    color: #000000;
-}
-
-@mixin programme-action {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-    color: #000000;
-    padding: 15px 0 25px;
-}
-
-@mixin local-title-W {
-    font-size: 28px;
-    line-height: 40px;
-    font-weight: 600;
-    color: #ffffff;
-    }
-
-@mixin main-font-W {
-    font-size: 20px;
-    line-height: 32px;
-    color: #ffffff;
-    font-weight: 600;
-}
-
 
 #contents1 {
     text-align: center;
@@ -402,7 +398,8 @@ body {
         }
 
         .contents1-sub-title {
-            @include main-font-W;
+            @include main-font($white);
+            font-weight: 600;
             padding-bottom: 15px;
         }
     
@@ -426,7 +423,9 @@ body {
                 }
 
                 .programme-action {
-                    @include programme-action;
+                    @include article-note($black);
+                    font-weight: 600;
+                    padding: 15px 0 25px;
                 }
             }
         }
@@ -437,7 +436,8 @@ body {
         background-color: #016EA9;
     
         .programme-note {
-            @include main-font-W;
+            @include main-font($white);
+            font-weight: 600;
             padding: 2px 0;
             
         }
@@ -456,7 +456,7 @@ body {
     }
 
     #contents2-sub-title {
-        @include main-font-B;
+        @include main-font($black);
 
     }
 
@@ -479,6 +479,85 @@ body {
         font-weight: 600;
         color: #333333;
         padding-bottom: 50px;
+    }
+}
+
+#contents3 {
+    text-align: center;
+    background-color: #FEF5E0;
+
+    #contents3-sub-title {
+        font-size: 20px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #333333;
+        padding-top: 40px;
+    }
+
+    #contents3-title {
+        @include local-title-B;
+    }
+
+    #three-merit-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 0 55px;
+
+        .three-merit {
+            width: 360px;
+
+            .three-merit-img {
+                width: 360px;
+                height: 180px;
+                object-fit: cover;
+
+            }
+
+            .three-merit-title {
+                @include main-font($main-color);
+                font-weight: 700;
+                text-align: left;
+            }
+
+            .three-merit-note {
+                @include article-note($black);
+                font-weight: 300;
+                text-align: left;
+            }
+        }
+    }
+
+    #cotents3-detail {
+        padding: 40px 200px 50px 200px;
+        border: solid 2px #EBB94D;
+        border-radius: 5px;
+        background-color: #ffffff;
+
+        #contents3-detail-title {
+            font-size: 28px;
+            line-height: 45px;
+            font-weight: 600;
+            color: #ebb94d;
+
+        }
+
+        #contents3-detail-sub-title {
+            @include main-font($black);
+            font-weight: 600;
+            padding: 15px 0 10px;
+
+        }
+
+        .contents3-detail-note {
+            @include article-note($black);
+            font-weight: 600;
+
+        }
+    }
+
+    #contents3-note {
+        padding: 40px 0 55px;
+
     }
 }
 
