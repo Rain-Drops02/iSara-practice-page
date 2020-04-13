@@ -120,48 +120,53 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+header {
+    position: fixed;
+    z-index: 999;
+    background-color: #ffffff;
+    width: 100%;
 
-#header-contents {
-    display: flex;
-    justify-content: space-between;
-    height: 75px;
-
-    #header-left {
+    #header-contents {
         display: flex;
-        justify-content: space-around;
-    }
+        justify-content: space-between;
+        height: 75px;
 
-    #header-logo {
-        max-width: 100%;
-        width: 130px;
-        height: 45px;
-        margin: 20px 5px 50px;
-    }
-
-    #header-comment {
-        @include header-font;
-        color: #333333;
-        font-weight: 600;
-        margin-top: 40px;
-    }
-
-    #header-btn {
-        @include header-font;
-        background-color: #DA6B64;
-        color: #ffffff;
-        padding: 13px 40px;
-        border-radius: 100px;
-        display: inline-block;
-        margin: 15px 0;
-
-        &:hover {
-            background-color: red;
+        #header-left {
+            display: flex;
+            justify-content: space-around;
         }
-        
+
+        #header-logo {
+            max-width: 100%;
+            width: 130px;
+            height: 45px;
+            margin: 20px 5px 50px;
+        }
+
+        #header-comment {
+            @include header-font;
+            color: #333333;
+            font-weight: 600;
+            margin-top: 40px;
+        }
+
+        #header-btn {
+            @include header-font;
+            background-color: #DA6B64;
+            color: #ffffff;
+            padding: 13px 40px;
+            border-radius: 100px;
+            display: inline-block;
+            margin: 15px 0;
+
+            &:hover {
+                background-color: red;
+            }
+            
+        }
+
     }
-
 }
-
 
 
 /*トップ部分*/
@@ -559,47 +564,132 @@ body {
 
 /*創業メンバー*/
 
+@mixin profile-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -165px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+}
+
 #member {
     background-image: url(image/top-img.jpg);
     height: 1390px;
     background-size: cover;
 
-    #profile-flex {
+    #member-title {
+        @include local-title($white);
+        text-align: center;
+        padding: 80px 0 45px;
+    }
+
+    #member-sub-title {
+        @include article-note($white);
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #profile-flex1 {
         display: flex;
         justify-content: space-evenly;
-        flex-wrap: wrap;
         width: 910px;
         max-width: 100%;
         margin: 0 auto;
+        padding: 200px 0;
 
         .profile-wrap {
+            position: relative;
 
-        
+            .profile-img1 {
+                @include profile-img;
+            }
 
-            .profile-img {
-
+            .profile-img2 {
+                @include profile-img;
             }
 
             .profile {
-                padding: 40px 40px 20px 40px;
-                border: solid 2px #ffffff;
+                padding: 0 40px;
+                border: solid 3px #ffffff;
 
                 .profile-position {
+                    @include article-note($white);
+                    text-align: center;
+                    padding-top: 40px;
 
                 }
 
                 .profile-name {
+                    @include article-note($white);
+                    text-align: center;
+                    padding: 15px 0;
 
                 }
 
                 .profile-detail {
+                    @include article-note($white);
                     width: 280px;
+                    padding-bottom: 50px;
+
+                }
+            }
+
+        }
+    }
+
+    #profile-flex2 {
+        display: flex;
+        justify-content: space-evenly;
+        width: 910px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        
+        .profile-wrap {
+            position: relative;
+
+            .profile-img3 {
+                @include profile-img;
+            }
+
+            .profile-img4 {
+                @include profile-img;
+            }
+
+            .profile {
+                padding: 0 40px;
+                border: solid 3px #ffffff;
+
+                .profile-position {
+                    @include article-note($white);
+                    text-align: center;
+                    padding-top: 40px;
+
+                }
+
+                .profile-name {
+                    @include article-note($white);
+                    text-align: center;
+                    padding: 15px 0;
+
+                }
+
+                .profile-detail {
+                    @include article-note($white);
+                    width: 280px;
+                    padding-bottom: 50px;
 
                 }
             }
         }
     }
+    
 }
+
 
 
 
