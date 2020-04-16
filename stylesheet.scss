@@ -690,6 +690,44 @@ header {
     
 }
 
+/*ノマドエンジニアとして自由に稼ぐことは本当に可能なのか*/
+
+#evidence {
+
+
+    #evidence-title-wrap {
+        background-color: $main-color;
+        text-align: center;
+        
+
+        #evidence-icon {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 80px;
+            font-weight: 400;
+            color: $main-color;
+            background-color: $white;
+            border-radius: 100px;
+            padding: 0 25px;
+            margin-top: 40px;
+        }
+
+        #evidence-title {
+            @include local-title($white);
+            padding: 15px 0 60px;
+        }
+
+    }
+
+    #triangle {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 25px solid $main-color;
+       margin: 0 auto;
+    }
+}
 
 
 
