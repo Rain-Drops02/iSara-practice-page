@@ -101,11 +101,10 @@ body {
     border-radius: 3px;
 }
 
-@mixin programme-period {
+@mixin article-sub-note($color) {
     font-size: 14px;
     line-height: 22px;
-    font-weight: 600;
-    color: #000000;
+    color: $color;
 }
 
 @mixin article-note($color) {
@@ -413,11 +412,13 @@ header {
                 border-radius: 5px;
 
                 .programme-number {
-                    @include programme-number;
+                    @include article-sub-note($black);
+                    font-weight: 600;
                 }
 
                 .programme-period {
-                    @include programme-period;
+                    @include article-sub-note($black);
+                    font-weight: 600;
                 }
 
                 .programme-action {
@@ -715,6 +716,7 @@ header {
         #evidence-title {
             @include local-title($white);
             padding: 15px 0 60px;
+            font-weight: 600;
         }
 
     }
@@ -726,6 +728,69 @@ header {
         border-right: 25px solid transparent;
         border-top: 25px solid $main-color;
        margin: 0 auto;
+    }
+    
+
+    #evidence-sub-title1 {
+        @include local-title($black);
+        font-weight: 600;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    #evidence-sub-title2 {
+        @include article-note($black);
+        font-weight: 600;
+        text-align: center;
+        padding: 15px 0 35px;
+    }
+    
+    #evidence-sub-title3 {
+        @include article-sub-note($black);
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+    
+    
+    #evidence-profile-wrap {
+        padding-bottom: 20px;
+
+        .evidence-profile {
+            display: flex;
+            justify-content: space-between;
+            width: 760px;
+            max-width: 100%;
+            margin: 0 auto;
+            padding-bottom: 40px;
+
+            .evidence-profile-img {
+                height: 245px;
+                width: 240px;
+                border: solid 1.5px $main-color;
+            }
+
+            .evidence-profile-flex {
+                width: 480px;
+                max-width: 100%;
+
+                .evidence-profile-detail {
+                    font-size: 18px;
+                    line-height: 29px;
+                    font-weight: 400;
+                    color: $evidence-profile;
+                    padding: 15px 0 10px;
+                }
+    
+                .evidence-profile-position {
+                    font-size: 15px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: $evidence-profile;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 }
 
