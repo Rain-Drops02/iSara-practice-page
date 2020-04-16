@@ -828,6 +828,44 @@ header #header-contents #header-btn:hover {
   text-decoration: underline;
 }
 
+/*isaraで学べる内容*/
+#leaning-contents {
+  background-image: url(image/top-img.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 800px;
+  text-align: center;
+}
+
+#leaning-contents #leaning-contents-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  font-weight: 600;
+  padding-top: 60px;
+}
+
+#leaning-contents #leaning-contents-intro {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 0 50px;
+}
+
+#leaning-contents #leaning-detail-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 780px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 /*以下リセットcss*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
