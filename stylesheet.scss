@@ -794,6 +794,47 @@ header {
     }
 }
 
+/*isaraで学べる内容*/
+
+#leaning-contents {
+    background-image: url(image/top-img.jpg);
+    object-fit: cover;
+    height: 800px;
+    text-align: center;
+
+    #leaning-contents-title {
+        @include local-title($white);
+        font-weight: 600;
+        padding-top: 60px;
+    }
+
+    #leaning-contents-intro {
+        @include article-note($white);
+        font-weight: 600;
+        padding: 10px 0 50px;
+    }
+
+    #leaning-detail-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 780px;
+        max-width: 100%;
+        margin: 0 auto;
+
+        #leaning-left {
+
+        }
+
+        #leaning-right {
+
+        }
+    }
+    
+    #leaning-contents-note {
+
+    }
+}
+
 
 
 /*以下リセットcss*/
