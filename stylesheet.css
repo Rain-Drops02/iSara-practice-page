@@ -386,23 +386,17 @@ header #header-contents #header-btn:hover {
 }
 
 #contents1 #contents1-img-wrap #programme-wrap .programme .programme-number {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
   font-weight: 600;
-  color: #ffffff;
-  background-color: #EBB94D;
-  /*確認*/
-  padding: 1px 125px;
-  margin: 25px 30px;
-  vertical-align: middle;
-  border-radius: 3px;
 }
 
 #contents1 #contents1-img-wrap #programme-wrap .programme .programme-period {
   font-size: 14px;
   line-height: 22px;
+  color: #333333;
   font-weight: 600;
-  color: #000000;
 }
 
 #contents1 #contents1-img-wrap #programme-wrap .programme .programme-action {
@@ -750,6 +744,7 @@ header #header-contents #header-btn:hover {
   font-weight: 600;
   color: #ffffff;
   padding: 15px 0 60px;
+  font-weight: 600;
 }
 
 #evidence #triangle {
@@ -759,6 +754,78 @@ header #header-contents #header-btn:hover {
   border-right: 25px solid transparent;
   border-top: 25px solid #EBB94D;
   margin: 0 auto;
+}
+
+#evidence #evidence-sub-title1 {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#evidence #evidence-sub-title2 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+  text-align: center;
+  padding: 15px 0 35px;
+}
+
+#evidence #evidence-sub-title3 {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+#evidence #evidence-profile-wrap {
+  padding-bottom: 20px;
+}
+
+#evidence #evidence-profile-wrap .evidence-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 760px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+#evidence #evidence-profile-wrap .evidence-profile .evidence-profile-img {
+  height: 245px;
+  width: 240px;
+  border: solid 1.5px #EBB94D;
+}
+
+#evidence #evidence-profile-wrap .evidence-profile .evidence-profile-flex {
+  width: 480px;
+  max-width: 100%;
+}
+
+#evidence #evidence-profile-wrap .evidence-profile .evidence-profile-flex .evidence-profile-detail {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #777777;
+  padding: 15px 0 10px;
+}
+
+#evidence #evidence-profile-wrap .evidence-profile .evidence-profile-flex .evidence-profile-position {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #777777;
+  text-decoration: underline;
 }
 
 /*以下リセットcss*/
