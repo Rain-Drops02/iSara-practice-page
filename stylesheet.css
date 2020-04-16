@@ -726,6 +726,41 @@ header #header-contents #header-btn:hover {
   padding-bottom: 50px;
 }
 
+/*ノマドエンジニアとして自由に稼ぐことは本当に可能なのか*/
+#evidence #evidence-title-wrap {
+  background-color: #EBB94D;
+  text-align: center;
+}
+
+#evidence #evidence-title-wrap #evidence-icon {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 80px;
+  font-weight: 400;
+  color: #EBB94D;
+  background-color: #ffffff;
+  border-radius: 100px;
+  padding: 0 25px;
+  margin-top: 40px;
+}
+
+#evidence #evidence-title-wrap #evidence-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 15px 0 60px;
+}
+
+#evidence #triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #EBB94D;
+  margin: 0 auto;
+}
+
 /*以下リセットcss*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
