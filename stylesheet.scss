@@ -46,6 +46,12 @@ body {
     -ms-transform: translateX(-50%);
 }
 
+@mixin sub-font($color) {
+    font-size: 18px;
+    line-height: 29px;
+    color: $color;
+}
+
 /*contact部分の@mixin*/
 
 @mixin under-top {
@@ -240,11 +246,9 @@ header {
         }
 
         #contact-comment3 {
+            @include sub-font($local-color);
             font-family: "Courier New";
-            font-size: 18px;
-            line-height: 29px;
             font-weight: bold;
-            color: #c7254e;
             background-color: #ffffff;
             display: inline-block;
             border-radius: 4px;
@@ -269,17 +273,17 @@ header {
             }
         }
 
-        #schedule1 {
+        #date1 {
             @include under-top;
 
         }
 
-        #schedule2 {
+        #date2 {
             @include under-top;
 
         }
 
-        #schedule3 {
+        #date3 {
             @include under-top;
 
         }
@@ -412,8 +416,12 @@ header {
                 border-radius: 5px;
 
                 .programme-number {
-                    @include article-sub-note($black);
+                    @include article-note($white);
                     font-weight: 600;
+                    background-color: $main-color;
+                    padding: 3px 125px;
+                    margin: 30px;
+                    border-radius: 5px;
                 }
 
                 .programme-period {
@@ -424,7 +432,7 @@ header {
                 .programme-action {
                     @include article-note($black);
                     font-weight: 600;
-                    padding: 15px 0 25px;
+                    padding: 30px 0 25px;
                 }
             }
         }
@@ -473,10 +481,8 @@ header {
     }
 
     #contents2-note {
-        font-size: 16px;
-        line-height: 26px;
+       @include article-note($black);
         font-weight: 600;
-        color: #333333;
         padding-bottom: 50px;
     }
 }
@@ -797,10 +803,13 @@ header {
 /*isaraで学べる内容*/
 
 #leaning-contents {
-    background-image: url(image/top-img.jpg);
-    object-fit: cover;
-    height: 800px;
     text-align: center;
+
+    #leaning-contents-img {
+        background-image: url(image/top-img.jpg);
+        object-fit: cover;
+        height: 800px;
+    
 
     #leaning-contents-title {
         @include local-title($white);
@@ -820,20 +829,149 @@ header {
         width: 780px;
         max-width: 100%;
         margin: 0 auto;
+        
 
         #leaning-left {
+            background-color: $white;
 
+            .leaning-detail-top {
+                background-color: $sub-color;
+                @include main-font($white);
+                font-weight: 600;
+                padding: 15px 110px;
+            }
+
+            .leaning-detail {
+                @include article-note($black);
+                font-weight: 600;
+                padding: 11px 0;
+                border-right: 1px solid $sub-color;
+                border-left: 1px solid $sub-color;
+            }
+
+            .leaning-border-left {
+                border-bottom: 1px dotted $leaning-border;
+            }
+
+            .leaning-detail-bottom {
+                border: 1px solid $sub-color;
+                border-top: 1px dotted $leaning-border;
+                background-color: $white;
+                @include article-note($black);
+                font-weight: 600;
+                padding: 11px 0;
+            }
         }
 
         #leaning-right {
 
+            .leaning-detail {
+                @include article-note($black);
+                font-weight: 600;
+                padding: 11px 0;
+                border-right: 1px solid $sub-color;
+                border-left: 1px solid $sub-color;
+                background-color: $white;
+            }
+            
+            .leaning-border-right {
+                border-top: 1px dotted $leaning-border;
+                
+            }
+
+            .leaning-detail-top {
+                background-color: $sub-color;
+                @include main-font($white);
+                font-weight: 600;
+                padding: 15px 110px;
+            }
+
+            .leaning-detail-bottom {
+                border: 1px solid $sub-color;
+                border-top: 1px dotted $leaning-border;
+                background-color: $white;
+                @include article-note($black);
+                font-weight: 600;
+                padding: 11px 0;
+            }
         }
+    }
     }
     
     #leaning-contents-note {
-
+        @include main-font($white);
+        font-weight: 600;
+        background-color: $sub-color;
+        padding: 40px 0;
     }
 }
+
+/*受講の流れ*/
+
+#schedule {
+    text-align: center;
+    padding-bottom: 40px;
+
+    #schedule-title {
+        @include local-title($black);
+        font-weight: 600px;
+        padding: 60px 0 55px;
+        text-align: center;
+    }
+
+    #schedule-img {
+        width: 1000px;
+        max-width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .schedule-content {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $main-color-light;
+        padding-top: 30px;
+        border-radius: 10px;
+
+        .schedule-content-left {
+            width: 150px;
+            max-width: 100%;
+
+            .schedule-local-img {
+                padding: 30px 0 20px;
+            }
+
+            .space {
+                margin-top: 20px;
+            }
+
+            .sub-font {
+                @include sub-font($black);
+                font-weight: 600;
+                padding-bottom: 30px;
+            }
+        }
+
+        .schedule-content-right {
+            width: 890px;
+            max-width: 100%;
+            text-align: left;
+            padding-top: 5px;
+
+            .article-note {
+                @include article-note($black);
+                font-weight: 600;
+                padding-bottom: 30px;
+            }
+
+            .article-sub-note {
+                @include article-sub-note($black);
+                font-weight: 300;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
 
 
 
