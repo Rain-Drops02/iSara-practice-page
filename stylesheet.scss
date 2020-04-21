@@ -972,6 +972,93 @@ header {
     }
 }
 
+/*なぜバンコクなのか？*/
+
+#place {
+    background-image: url(image/top-img.jpg);
+
+    #place-title {
+        @include local-title($white);
+        font-weight: 600;
+        padding: 100px 0 30px;
+    }
+
+    #place-sub-note {
+        @include article-sub-note($white);
+        font-weight: 300;
+    }
+
+    #place-note-wrap {
+        padding: 25px 0 15px;
+
+        .place-note {
+            @include article-note($white);
+            font-weight: 600;
+            padding-bottom: 15px;
+        }
+    }
+
+    #place-main-font {
+        @include main-font($white);
+        font-weight: 600;
+        padding-bottom: 95px;
+    }
+}
+
+/*isara受講生への参加特典*/
+
+#gift {
+    background-color: $main-color;
+    text-align: center;
+
+    #gift-title {
+        @include local-title($black);
+        font-weight: 600;
+        padding: 60px 0 50px;
+    }
+
+    #gift-article-note {
+        @include article-note($white);
+        font-weight: 600;
+    }
+
+    #gift-content-wrap {
+
+
+        #gift-content-title {
+            @include local-title($black);
+            font-weight: 600;
+            padding-top: 75px;
+        }
+
+        #gift-detail-flex {
+            display: flex;
+            justify-content: space-evenly;
+
+            .gift-detail-wrap {
+                width: 220px;
+                height: 210px;
+                max-width: 100%;
+                background-color: $white;
+                border-radius: ;
+
+                .gift-number {
+                    font-size: 24px;
+                    line-height: 38px;
+                    font-weight: 300;
+                    color: $main-color;
+                }
+
+                .gift-sub-note {
+                    @include article-sub-note($black);
+                    font-weight: 600;
+                    padding: 25px 15px 0 15px;
+                }
+            }
+        }
+    }
+}
+
 
 
 
