@@ -1033,6 +1033,110 @@ header #header-contents #header-btn:hover {
   padding-bottom: 20px;
 }
 
+/*なぜバンコクなのか？*/
+#place {
+  background-image: url(image/top-img.jpg);
+}
+
+#place #place-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 100px 0 30px;
+}
+
+#place #place-sub-note {
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+#place #place-note-wrap {
+  padding: 25px 0 15px;
+}
+
+#place #place-note-wrap .place-note {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+#place #place-main-font {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 95px;
+}
+
+/*isara受講生への参加特典*/
+#gift {
+  background-color: #EBB94D;
+  text-align: center;
+}
+
+#gift #gift-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  font-weight: 600;
+  padding: 60px 0 50px;
+}
+
+#gift #gift-article-note {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#gift #gift-content-wrap #gift-content-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  font-weight: 600;
+  padding-top: 75px;
+}
+
+#gift #gift-content-wrap #gift-detail-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#gift #gift-content-wrap #gift-detail-flex .gift-detail-wrap {
+  width: 220px;
+  max-width: 100%;
+  background-color: #ffffff;
+  border-radius: 100px;
+}
+
+#gift #gift-content-wrap #gift-detail-flex .gift-detail-wrap .gift-number {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: 300;
+  color: #EBB94D;
+  padding-top: 60px;
+}
+
+#gift #gift-content-wrap #gift-detail-flex .gift-detail-wrap .gift-sub-note {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 600;
+  padding: 25px 15px 60px 15px;
+}
+
 /*以下リセットcss*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
