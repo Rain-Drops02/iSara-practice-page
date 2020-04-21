@@ -184,11 +184,11 @@ header #header-contents #header-btn:hover {
 }
 
 #top-contents #contact #contact-comment3 {
-  font-family: "Courier New";
   font-size: 18px;
   line-height: 29px;
-  font-weight: bold;
   color: #c7254e;
+  font-family: "Courier New";
+  font-weight: bold;
   background-color: #ffffff;
   display: inline-block;
   border-radius: 4px;
@@ -213,7 +213,7 @@ header #header-contents #header-btn:hover {
   background-color: red;
 }
 
-#top-contents #contact #schedule1 {
+#top-contents #contact #date1 {
   font-size: 21px;
   line-height: 34px;
   font-weight: 600;
@@ -221,7 +221,7 @@ header #header-contents #header-btn:hover {
   padding-bottom: 45px;
 }
 
-#top-contents #contact #schedule2 {
+#top-contents #contact #date2 {
   font-size: 21px;
   line-height: 34px;
   font-weight: 600;
@@ -229,7 +229,7 @@ header #header-contents #header-btn:hover {
   padding-bottom: 45px;
 }
 
-#top-contents #contact #schedule3 {
+#top-contents #contact #date3 {
   font-size: 21px;
   line-height: 34px;
   font-weight: 600;
@@ -386,10 +386,14 @@ header #header-contents #header-btn:hover {
 }
 
 #contents1 #contents1-img-wrap #programme-wrap .programme .programme-number {
-  font-size: 14px;
-  line-height: 22px;
-  color: #333333;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
   font-weight: 600;
+  background-color: #EBB94D;
+  padding: 3px 125px;
+  margin: 30px;
+  border-radius: 5px;
 }
 
 #contents1 #contents1-img-wrap #programme-wrap .programme .programme-period {
@@ -404,7 +408,7 @@ header #header-contents #header-btn:hover {
   line-height: 26px;
   color: #333333;
   font-weight: 600;
-  padding: 15px 0 25px;
+  padding: 30px 0 25px;
 }
 
 #contents1 #programme-note-wrap {
@@ -459,8 +463,8 @@ header #header-contents #header-btn:hover {
 #contents2 #contents2-note {
   font-size: 16px;
   line-height: 26px;
-  font-weight: 600;
   color: #333333;
+  font-weight: 600;
   padding-bottom: 50px;
 }
 
@@ -830,14 +834,17 @@ header #header-contents #header-btn:hover {
 
 /*isaraで学べる内容*/
 #leaning-contents {
+  text-align: center;
+}
+
+#leaning-contents #leaning-contents-img {
   background-image: url(image/top-img.jpg);
   -o-object-fit: cover;
      object-fit: cover;
   height: 800px;
-  text-align: center;
 }
 
-#leaning-contents #leaning-contents-title {
+#leaning-contents #leaning-contents-img #leaning-contents-title {
   font-size: 28px;
   line-height: 40px;
   font-weight: 600;
@@ -846,7 +853,7 @@ header #header-contents #header-btn:hover {
   padding-top: 60px;
 }
 
-#leaning-contents #leaning-contents-intro {
+#leaning-contents #leaning-contents-img #leaning-contents-intro {
   font-size: 16px;
   line-height: 26px;
   color: #ffffff;
@@ -854,7 +861,7 @@ header #header-contents #header-btn:hover {
   padding: 10px 0 50px;
 }
 
-#leaning-contents #leaning-detail-wrap {
+#leaning-contents #leaning-contents-img #leaning-detail-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -864,6 +871,166 @@ header #header-contents #header-btn:hover {
   width: 780px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-left {
+  background-color: #ffffff;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-left .leaning-detail-top {
+  background-color: #016EA9;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 15px 110px;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-left .leaning-detail {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+  padding: 11px 0;
+  border-right: 1px solid #016EA9;
+  border-left: 1px solid #016EA9;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-left .leaning-border-left {
+  border-bottom: 1px dotted #E5E5E5;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-left .leaning-detail-bottom {
+  border: 1px solid #016EA9;
+  border-top: 1px dotted #E5E5E5;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+  padding: 11px 0;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-right .leaning-detail {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+  padding: 11px 0;
+  border-right: 1px solid #016EA9;
+  border-left: 1px solid #016EA9;
+  background-color: #ffffff;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-right .leaning-border-right {
+  border-top: 1px dotted #E5E5E5;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-right .leaning-detail-top {
+  background-color: #016EA9;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 15px 110px;
+}
+
+#leaning-contents #leaning-contents-img #leaning-detail-wrap #leaning-right .leaning-detail-bottom {
+  border: 1px solid #016EA9;
+  border-top: 1px dotted #E5E5E5;
+  background-color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+  padding: 11px 0;
+}
+
+#leaning-contents #leaning-contents-note {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #016EA9;
+  padding: 40px 0;
+}
+
+/*受講の流れ*/
+#schedule {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#schedule #schedule-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  font-weight: 600px;
+  padding: 60px 0 55px;
+  text-align: center;
+}
+
+#schedule #schedule-img {
+  width: 1000px;
+  max-width: 100%;
+  padding-bottom: 40px;
+}
+
+#schedule .schedule-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #FEF5E0;
+  padding-top: 30px;
+  border-radius: 10px;
+}
+
+#schedule .schedule-content .schedule-content-left {
+  width: 150px;
+  max-width: 100%;
+}
+
+#schedule .schedule-content .schedule-content-left .schedule-local-img {
+  padding: 30px 0 20px;
+}
+
+#schedule .schedule-content .schedule-content-left .space {
+  margin-top: 20px;
+}
+
+#schedule .schedule-content .schedule-content-left .sub-font {
+  font-size: 18px;
+  line-height: 29px;
+  color: #333333;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+#schedule .schedule-content .schedule-content-right {
+  width: 890px;
+  max-width: 100%;
+  text-align: left;
+  padding-top: 5px;
+}
+
+#schedule .schedule-content .schedule-content-right .article-note {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+#schedule .schedule-content .schedule-content-right .article-sub-note {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 300;
+  padding-bottom: 20px;
 }
 
 /*以下リセットcss*/
