@@ -159,14 +159,14 @@ header #header-contents #header-btn:hover {
   top: 370px;
 }
 
-#top-contents #contact {
+#top-contents #contact1 {
   text-align: center;
   background-color: #EBB94D;
   height: auto;
   width: 100%;
 }
 
-#top-contents #contact #contact-comment1 {
+#top-contents #contact1 #contact1-comment1 {
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
@@ -175,7 +175,7 @@ header #header-contents #header-btn:hover {
   padding-bottom: 15px;
 }
 
-#top-contents #contact #contact-comment2 {
+#top-contents #contact1 #contact1-comment2 {
   font-size: 20px;
   line-height: 32px;
   color: #ffffff;
@@ -183,7 +183,7 @@ header #header-contents #header-btn:hover {
   padding-bottom: 15px;
 }
 
-#top-contents #contact #contact-comment3 {
+#top-contents #contact1 #contact1-comment3 {
   font-size: 18px;
   line-height: 29px;
   color: #c7254e;
@@ -196,7 +196,7 @@ header #header-contents #header-btn:hover {
   margin-top: 8px;
 }
 
-#top-contents #contact #contact-btn {
+#top-contents #contact1 #contact1-btn {
   font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
   font-size: 28px;
   line-height: 45px;
@@ -209,11 +209,11 @@ header #header-contents #header-btn:hover {
   margin: 50px 0 70px 0;
 }
 
-#top-contents #contact #contact-btn:hover {
+#top-contents #contact1 #contact1-btn:hover {
   background-color: red;
 }
 
-#top-contents #contact #date1 {
+#top-contents #contact1 #date1 {
   font-size: 21px;
   line-height: 34px;
   font-weight: 600;
@@ -221,7 +221,7 @@ header #header-contents #header-btn:hover {
   padding-bottom: 45px;
 }
 
-#top-contents #contact #date2 {
+#top-contents #contact1 #date2 {
   font-size: 21px;
   line-height: 34px;
   font-weight: 600;
@@ -229,7 +229,7 @@ header #header-contents #header-btn:hover {
   padding-bottom: 45px;
 }
 
-#top-contents #contact #date3 {
+#top-contents #contact1 #date3 {
   font-size: 21px;
   line-height: 34px;
   font-weight: 600;
@@ -1094,6 +1094,12 @@ header #header-contents #header-btn:hover {
   line-height: 26px;
   color: #ffffff;
   font-weight: 600;
+  padding-bottom: 140px;
+}
+
+#gift #gift-content-wrap {
+  padding-bottom: 40px;
+  position: relative;
 }
 
 #gift #gift-content-wrap #gift-content-title {
@@ -1102,7 +1108,15 @@ header #header-contents #header-btn:hover {
   font-weight: 600;
   color: #333333;
   font-weight: 600;
-  padding-top: 75px;
+  background-color: #EBB94D;
+  z-index: 998;
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  width: 500px;
 }
 
 #gift #gift-content-wrap #gift-detail-flex {
@@ -1112,13 +1126,16 @@ header #header-contents #header-btn:hover {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  border: 2px solid #ffffff;
+  padding: 50px 0;
 }
 
 #gift #gift-content-wrap #gift-detail-flex .gift-detail-wrap {
-  width: 220px;
+  width: 250px;
+  height: 250px;
   max-width: 100%;
   background-color: #ffffff;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 #gift #gift-content-wrap #gift-detail-flex .gift-detail-wrap .gift-number {
@@ -1126,7 +1143,7 @@ header #header-contents #header-btn:hover {
   line-height: 38px;
   font-weight: 300;
   color: #EBB94D;
-  padding-top: 60px;
+  padding: 55px 0 15px;
 }
 
 #gift #gift-content-wrap #gift-detail-flex .gift-detail-wrap .gift-sub-note {
@@ -1134,7 +1151,120 @@ header #header-contents #header-btn:hover {
   line-height: 22px;
   color: #333333;
   font-weight: 600;
-  padding: 25px 15px 60px 15px;
+  padding: 0 20px;
+}
+
+/*isaraはボランティアではありません*/
+#attention {
+  text-align: center;
+  background-image: url(image/top-img.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#attention #attention-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 45px;
+  font-weight: 600;
+  padding: 60px 0 25px;
+}
+
+#attention #attention-main-font1 {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+#attention #attention-message {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 40px;
+  font-weight: 600;
+  padding: 40px 0 20px;
+}
+
+#attention #attention-main-font2 {
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  padding-bottom: 85px;
+}
+
+/*創業者からのメッセージ*/
+#message {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#message #message-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  font-weight: 600;
+  padding: 60px 0 40px;
+}
+
+#message #message-sub-title {
+  font-size: 20px;
+  line-height: 32px;
+  color: #333333;
+  font-weight: 700;
+}
+
+#message #message-detail-flex {
+  width: 860px;
+  max-width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 45px 0 90px;
+}
+
+#message #message-detail-flex #message-img {
+  width: 190px;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#message #message-detail-flex #message-detail-wrap {
+  width: 635px;
+  max-width: 100%;
+  text-align: left;
+}
+
+#message #message-detail-flex #message-detail-wrap .message-detail {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 400;
+}
+
+#message #message-detail-flex #message-detail-wrap .message-space {
+  padding-bottom: 10px;
+}
+
+#message #message-detail-flex #message-detail-wrap #message-list-wrap {
+  padding: 35px 0;
+}
+
+#message #message-detail-flex #message-detail-wrap #message-list-wrap .message-list {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+  font-weight: 400;
 }
 
 /*以下リセットcss*/
