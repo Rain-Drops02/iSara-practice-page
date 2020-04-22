@@ -226,26 +226,26 @@ header {
         }
     }
 
-    #contact {
+    #contact1 {
         text-align: center;
         background-color: #EBB94D;
         height: auto;
         width: 100%;
 
-        #contact-comment1 {
+        #contact1-comment1 {
             @include main-font($white);
             font-weight: 600;
             padding-top: 35px;
             padding-bottom: 15px;
         }
 
-        #contact-comment2 {
+        #contact1-comment2 {
             @include main-font($white);
             font-weight: 600;
             padding-bottom: 15px;
         }
 
-        #contact-comment3 {
+        #contact1-comment3 {
             @include sub-font($local-color);
             font-family: "Courier New";
             font-weight: bold;
@@ -256,7 +256,7 @@ header {
             margin-top: 8px;
         }
 
-        #contact-btn {
+        #contact1-btn {
             font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
             font-size: 28px;
             line-height: 45px;
@@ -1020,44 +1020,151 @@ header {
     #gift-article-note {
         @include article-note($white);
         font-weight: 600;
+        padding-bottom: 140px;
     }
 
     #gift-content-wrap {
-
+        padding-bottom: 40px;
+        position: relative;
 
         #gift-content-title {
             @include local-title($black);
             font-weight: 600;
-            padding-top: 75px;
+            background-color: $main-color;
+            z-index: 998;
+            position: absolute;
+            top: -70px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            width: 500px;
         }
 
         #gift-detail-flex {
             display: flex;
             justify-content: space-evenly;
+            border: 2px solid $white;
+            padding: 50px 0;
 
             .gift-detail-wrap {
-                width: 220px;
-                height: 210px;
+                width: 250px;
+                height: 250px;
                 max-width: 100%;
                 background-color: $white;
-                border-radius: ;
+                border-radius: 50%;
 
                 .gift-number {
                     font-size: 24px;
                     line-height: 38px;
                     font-weight: 300;
                     color: $main-color;
+                    padding: 55px 0 15px;
                 }
 
                 .gift-sub-note {
                     @include article-sub-note($black);
                     font-weight: 600;
-                    padding: 25px 15px 0 15px;
+                    padding: 0 20px;
+                    
                 }
             }
         }
     }
 }
+
+/*isaraはボランティアではありません*/
+
+#attention {
+    text-align: center;
+    background-image: url(image/top-img.jpg);
+    object-fit: cover;
+
+    #attention-title {
+        @include local-title($white);
+        line-height: 45px;
+        font-weight: 600;
+        padding: 60px 0 25px;
+    }
+
+    #attention-main-font1 {
+        @include main-font($white);
+        font-weight: 600;
+    }
+
+    #attention-message {
+        @include local-title($white);
+        line-height: 40px;
+        font-weight: 600;
+        padding: 40px 0 20px;
+    }
+
+    #attention-main-font2 {
+        @include main-font($white);
+        font-weight: 600;
+        padding-bottom: 85px;
+    }
+}
+
+/*創業者からのメッセージ*/
+
+#message {
+    text-align: center;
+    background-color: $white;
+
+    #message-title {
+        @include local-title($black);
+        font-weight: 600;
+        padding: 60px 0 40px;
+    }
+
+    #message-sub-title {
+        @include main-font($black);
+        font-weight: 700;
+    }
+
+    #message-detail-flex {
+        width: 860px;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 45px 0 90px;
+
+        #message-img {
+            width: 190px;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        #message-detail-wrap {
+            width: 635px;
+            max-width: 100%;
+            text-align: left;
+
+            .message-detail {
+                @include article-sub-note($black);
+                font-weight: 400;
+            }
+
+            .message-space {
+                padding-bottom: 10px;
+            }
+
+            #message-list-wrap {
+                padding: 35px 0;
+
+                .message-list {
+                    @include article-sub-note($black);
+                    font-weight: 400;
+
+                }
+            }
+        }
+    }
+}
+
+
 
 
 
