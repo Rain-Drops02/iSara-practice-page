@@ -1267,6 +1267,53 @@ header #header-contents #header-btn:hover {
   font-weight: 400;
 }
 
+/*資料請求フォーム*/
+#contact2 {
+  text-align: center;
+  background-color: #EBB94D;
+}
+
+#contact2 #contact2-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  font-weight: 600;
+  padding: 60px 0 25px;
+}
+
+#contact2 #contact2-sub-title {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+}
+
+#contact2 #contact2-detail-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 810px;
+  margin: 0 auto;
+  padding: 40px 0 70px;
+}
+
+#contact2 #contact2-detail-wrap .input {
+  margin-bottom: 25px;
+  height: 55px;
+  border-radius: 5px;
+}
+
+#contact2 #contact2-detail-wrap #contact2-comment {
+  margin: 20px 0 40px;
+  height: 100px;
+  border-radius: 5px;
+}
+
 /*以下リセットcss*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
