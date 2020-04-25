@@ -1306,12 +1306,30 @@ header #header-contents #header-btn:hover {
   margin-bottom: 25px;
   height: 55px;
   border-radius: 5px;
+  border: none;
+  padding: 10px;
 }
 
 #contact2 #contact2-detail-wrap #contact2-comment {
   margin: 20px 0 40px;
   height: 100px;
   border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+#contact2 #contact2-detail-wrap #contact2-btn {
+  font-size: 23px;
+  color: #ffffff;
+  background-color: #DA6B64;
+  padding: 10px 80px;
+  border-radius: 50px;
+  font-weight: 600;
+  line-height: 37px;
+}
+
+#contact2 #contact2-detail-wrap #contact2-btn:hover {
+  background-color: red;
 }
 
 /*以下リセットcss*/
