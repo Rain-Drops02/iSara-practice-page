@@ -150,15 +150,15 @@ header {
 
         #header-comment {
             @include header-font;
-            color: #333333;
+            color: $black;
             font-weight: 600;
             margin-top: 40px;
         }
 
         #header-btn {
             @include header-font;
-            background-color: #DA6B64;
-            color: #ffffff;
+            background-color: $btn;
+            color: $white;
             padding: 13px 40px;
             border-radius: 100px;
             display: inline-block;
@@ -261,8 +261,8 @@ header {
             font-size: 28px;
             line-height: 45px;
             font-weight: 600;
-            background-color: #DA6B64;
-            color: #ffffff;
+            background-color: $btn;
+            color: $white;
             padding: 35px 300px;
             border-radius: 100px;
             display: inline-block;
@@ -1192,16 +1192,30 @@ header {
             margin-bottom: 25px;
             height: 55px;
             border-radius: 5px;
+            border: none;
+            padding: 10px;
         }
 
         #contact2-comment {
             margin: 20px 0 40px;
             height: 100px;
             border-radius: 5px;
+            border: none;
+            padding: 10px;
         }
 
         #contact2-btn {
+            font-size: 23px;
+            color: $white;
+            background-color: $btn;
+            padding: 10px 80px;
+            border-radius: 50px;
+            font-weight: 600;
+            line-height: 37px;
 
+            &:hover {
+                background-color: red;
+            }
         }
     }
 }
