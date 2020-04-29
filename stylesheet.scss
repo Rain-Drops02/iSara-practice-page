@@ -14,6 +14,7 @@ li {
 
 body {
     font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+    letter-spacing: 1.5px;
 }
 
 /*ヘッダー*/
@@ -183,7 +184,7 @@ header {
     
         #top-img {
             width: 100%;
-            height: 500px;
+            height: 575px;
             object-fit: cover;
         }
 
@@ -194,14 +195,14 @@ header {
         #top-comment1 {
             @include top-commentA;
             @include on-img-position;
-            top: 90px;
+            top: 165px;
             
         }
 
         #top-comment2 {
             @include top-commentA;
             @include on-img-position;
-            top: 140px;
+            top: 215px;
         }
 
         #top-comment3 {
@@ -210,19 +211,19 @@ header {
 
         #t-c3-wrap {
             @include on-img-position;
-            top: 200px;
+            top: 275px;
         }
 
         #top-comment4 {
             @include top-commentB;
             @include on-img-position;
-            top: 340px;
+            top: 415px;
         }
         
         #top-comment5 {
             @include top-commentB;
             @include on-img-position;
-            top: 370px;
+            top: 445px;
         }
     }
 
@@ -1221,6 +1222,43 @@ header {
 }
 
 
+/*よくある質問*/
+
+#QA-wrap {
+    text-align: center;
+
+    #QA-title {
+        @include local-title($black);
+        padding: 60px 0 45px;
+    }
+
+    .QA {
+        text-align: left;
+
+        .question-wrap {
+
+
+            .question {
+                @include main-font(#000000);
+                font-weight: 600;
+                padding: 20px 0;
+                border: 1px solid #e5e5e5;
+            }
+
+            .fa-question-circle {
+                padding: 0 0 8px 20px;
+                color: #016EA9;
+            }
+        }
+
+        .answer {
+            @include article-note($black);
+            font-weight: 600;
+            padding: 20px 0 35px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+}
 
 
 
