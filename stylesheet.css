@@ -14,6 +14,7 @@ li {
 
 body {
   font-family: "Hiragino Kaku Gothic Pro", "MS PGothic", sans-serif;
+  letter-spacing: 1.5px;
 }
 
 /*ヘッダー*/
@@ -90,7 +91,7 @@ header #header-contents #header-btn:hover {
 
 #top-contents #top-message #top-img {
   width: 100%;
-  height: 500px;
+  height: 575px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -108,7 +109,7 @@ header #header-contents #header-btn:hover {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  top: 90px;
+  top: 165px;
 }
 
 #top-contents #top-message #top-comment2 {
@@ -120,7 +121,7 @@ header #header-contents #header-btn:hover {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  top: 140px;
+  top: 215px;
 }
 
 #top-contents #top-message #top-comment3 {
@@ -132,7 +133,7 @@ header #header-contents #header-btn:hover {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  top: 200px;
+  top: 275px;
 }
 
 #top-contents #top-message #top-comment4 {
@@ -144,7 +145,7 @@ header #header-contents #header-btn:hover {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  top: 340px;
+  top: 415px;
 }
 
 #top-contents #top-message #top-comment5 {
@@ -156,7 +157,7 @@ header #header-contents #header-btn:hover {
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
-  top: 370px;
+  top: 445px;
 }
 
 #top-contents #contact1 {
@@ -1330,6 +1331,46 @@ header #header-contents #header-btn:hover {
 
 #contact2 #contact2-detail-wrap #contact2-btn:hover {
   background-color: red;
+}
+
+/*よくある質問*/
+#QA-wrap {
+  text-align: center;
+}
+
+#QA-wrap #QA-title {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+  color: #333333;
+  padding: 60px 0 45px;
+}
+
+#QA-wrap .QA {
+  text-align: left;
+}
+
+#QA-wrap .QA .question-wrap .question {
+  font-size: 20px;
+  line-height: 32px;
+  color: #000000;
+  font-weight: 600;
+  padding: 20px 0;
+  border: 1px solid #e5e5e5;
+}
+
+#QA-wrap .QA .question-wrap .fa-question-circle {
+  padding: 0 0 8px 20px;
+  color: #016EA9;
+}
+
+#QA-wrap .QA .answer {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: 600;
+  padding: 20px 0 35px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /*以下リセットcss*/
