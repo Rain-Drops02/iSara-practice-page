@@ -1226,6 +1226,7 @@ header {
 
 #QA-wrap {
     text-align: center;
+    padding-bottom: 60px;
 
     #QA-title {
         @include local-title($black);
@@ -1234,33 +1235,47 @@ header {
 
     .QA {
         text-align: left;
-
+        width: 1040px;
+        max-width: 100%;
+        margin: 0 auto;
+        
         .question-wrap {
 
-
             .question {
-                @include main-font(#000000);
+                @include main-font($question-black);
                 font-weight: 600;
+                display: block;
                 padding: 20px 0;
-                border: 1px solid #e5e5e5;
+                border: 1px solid $question-border;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+
+                &:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
             }
 
             .fa-question-circle {
                 padding: 0 0 8px 20px;
-                color: #016EA9;
+                color: $question;
             }
         }
 
         .answer {
             @include article-note($black);
             font-weight: 600;
-            padding: 20px 0 35px;
+            padding: 20px 20px 35px 20px;
+            margin-bottom: 5px;
             border-bottom: 1px solid #e5e5e5;
+            box-shadow: 0 0.1px 0.1px 0.3px rgba(0,0,0,0.05);
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            display: none;
         }
     }
 }
-
-
 
 
 /*以下リセットcss*/
