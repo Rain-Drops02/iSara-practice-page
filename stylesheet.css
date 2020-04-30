@@ -1336,6 +1336,7 @@ header #header-contents #header-btn:hover {
 /*よくある質問*/
 #QA-wrap {
   text-align: center;
+  padding-bottom: 60px;
 }
 
 #QA-wrap #QA-title {
@@ -1348,6 +1349,9 @@ header #header-contents #header-btn:hover {
 
 #QA-wrap .QA {
   text-align: left;
+  width: 1040px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #QA-wrap .QA .question-wrap .question {
@@ -1355,8 +1359,16 @@ header #header-contents #header-btn:hover {
   line-height: 32px;
   color: #000000;
   font-weight: 600;
+  display: block;
   padding: 20px 0;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #dddddd;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+#QA-wrap .QA .question-wrap .question:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #QA-wrap .QA .question-wrap .fa-question-circle {
@@ -1369,8 +1381,14 @@ header #header-contents #header-btn:hover {
   line-height: 26px;
   color: #333333;
   font-weight: 600;
-  padding: 20px 0 35px;
+  padding: 20px 20px 35px 20px;
+  margin-bottom: 5px;
   border-bottom: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0 0.1px 0.1px 0.3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0.1px 0.1px 0.3px rgba(0, 0, 0, 0.05);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  display: none;
 }
 
 /*以下リセットcss*/
