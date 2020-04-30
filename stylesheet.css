@@ -23,6 +23,7 @@ body {
 /*エンジニアとして本当の自由を手に入れるためには  intro*/
 /*ノマド育成講座イサラとは  desc*/
 /*isaraで基本的なプログラミングスキルは教えません  contents1*/
+/*footer*/
 .container {
   width: 1170px;
   max-width: 100%;
@@ -1376,6 +1377,12 @@ header #header-contents #header-btn:hover {
   color: #016EA9;
 }
 
+#QA-wrap .QA .question-wrap .fa-angle-down {
+  padding-right: 20px;
+  float: right;
+  color: #E5E5E5;
+}
+
 #QA-wrap .QA .answer {
   font-size: 16px;
   line-height: 26px;
@@ -1389,6 +1396,29 @@ header #header-contents #header-btn:hover {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   display: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #ececec;
+}
+
+footer #footer-title {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+footer #footer-copyright {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 300;
+}
+
+footer #design-develope-name {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 300;
 }
 
 /*以下リセットcss*/
