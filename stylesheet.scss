@@ -120,6 +120,14 @@ body {
     color: $color;
 }
 
+/*footer*/
+
+@mixin footer-font($color) {
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
 
 .container {
     width: 1170px;
@@ -1261,6 +1269,12 @@ header {
                 padding: 0 0 8px 20px;
                 color: $question;
             }
+
+            .fa-angle-down {
+                padding-right: 20px;
+                float: right;
+                color: $leaning-border;
+            }
         }
 
         .answer {
@@ -1274,6 +1288,30 @@ header {
             border-bottom-right-radius: 3px;
             display: none;
         }
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: $footer-color;
+
+    #footer-title {
+        @include footer-font($black);
+    }
+
+    #footer-copyright {
+        @include footer-font($black);
+    }
+
+    #sns-wrap {
+
+        .sns {
+
+        }
+    }
+
+    #design-develope-name {
+        @include footer-font($black);
     }
 }
 
