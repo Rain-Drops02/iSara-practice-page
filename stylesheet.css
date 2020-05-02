@@ -242,24 +242,55 @@ header #header-contents #header-btn:hover {
 /*エンジニアとして本当の自由を手に入れるためには  intro*/
 #intro {
   text-align: center;
+  position: relative;
 }
 
-#intro #intro-title {
+#intro #intro-img {
+  width: 100%;
+}
+
+#intro #intro-wrap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+#intro #intro-wrap #intro-title {
   font-size: 28px;
   line-height: 40px;
   font-weight: 600;
   color: #333333;
-  /*確認*/
-  padding: 40px 80px;
+  width: 860px;
+  padding: 30px;
+  margin: 40px auto;
+  position: relative;
 }
 
-#intro #intro-title .sub-title-span {
-  /*確認*/
-  font-size: 60px;
-  padding: 60px;
+#intro #intro-wrap #intro-title::before, #intro #intro-wrap #intro-title::after {
+  content: '';
+  width: 45px;
+  height: 45px;
+  position: absolute;
 }
 
-#intro .intro-content {
+#intro #intro-wrap #intro-title::before {
+  border-left: solid 4px #EBB94D;
+  border-top: solid 4px #EBB94D;
+  top: 0;
+  left: 0;
+}
+
+#intro #intro-wrap #intro-title::after {
+  border-right: solid 4px #EBB94D;
+  border-bottom: solid 4px #EBB94D;
+  bottom: 0;
+  right: 0;
+}
+
+#intro #intro-wrap .intro-content {
   font-size: 20px;
   line-height: 32px;
   color: #333333;
@@ -267,7 +298,7 @@ header #header-contents #header-btn:hover {
   font-weight: 300;
 }
 
-#intro .intro-content #intro-content-span {
+#intro #intro-wrap .intro-content #intro-content-span {
   font-size: 20px;
   line-height: 32px;
   color: #333333;
@@ -277,18 +308,11 @@ header #header-contents #header-btn:hover {
   background: linear-gradient(transparent 70%, #EBB94D 70%);
 }
 
-#intro #intro-img {
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /*ノマド育成講座イサラとは  desc*/
 #desc {
   text-align: center;
   background-color: #FEF5E0;
-  padding-bottom: 70px;
+  padding: 40px 0 70px;
 }
 
 #desc #desc-title {
@@ -296,13 +320,32 @@ header #header-contents #header-btn:hover {
   line-height: 40px;
   font-weight: 600;
   color: #333333;
-  padding: 40px 80px 70px 80px;
+  width: 860px;
+  padding: 30px;
+  margin: 40px auto;
+  position: relative;
+  margin-top: 0px;
 }
 
-#desc #desc-title .sub-title-span {
-  /*確認*/
-  font-size: 60px;
-  padding: 60px;
+#desc #desc-title::before, #desc #desc-title::after {
+  content: '';
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+
+#desc #desc-title::before {
+  border-left: solid 4px #EBB94D;
+  border-top: solid 4px #EBB94D;
+  top: 0;
+  left: 0;
+}
+
+#desc #desc-title::after {
+  border-right: solid 4px #EBB94D;
+  border-bottom: solid 4px #EBB94D;
+  bottom: 0;
+  right: 0;
 }
 
 #desc #desc-summary {
@@ -349,8 +392,10 @@ header #header-contents #header-btn:hover {
 }
 
 #contents1 #contents1-img-wrap {
-  background-image: url(image/top-img.jpg);
+  background-image: url(image/aboutsecondbg.jpg);
+  width: 100%;
   height: 440px;
+  background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -410,7 +455,7 @@ header #header-contents #header-btn:hover {
   line-height: 26px;
   color: #333333;
   font-weight: 600;
-  padding: 30px 0 25px;
+  padding: 15px 0 25px;
 }
 
 #contents1 #programme-note-wrap {
@@ -474,17 +519,46 @@ header #header-contents #header-btn:hover {
 #contents3 {
   text-align: center;
   background-color: #FEF5E0;
+  padding-top: 40px;
 }
 
-#contents3 #contents3-sub-title {
+#contents3 #contents3-sub-title-wrap {
+  width: 860px;
+  padding: 30px;
+  margin: 40px auto;
+  position: relative;
+  margin-top: 0px;
+}
+
+#contents3 #contents3-sub-title-wrap::before, #contents3 #contents3-sub-title-wrap::after {
+  content: '';
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+
+#contents3 #contents3-sub-title-wrap::before {
+  border-left: solid 4px #EBB94D;
+  border-top: solid 4px #EBB94D;
+  top: 0;
+  left: 0;
+}
+
+#contents3 #contents3-sub-title-wrap::after {
+  border-right: solid 4px #EBB94D;
+  border-bottom: solid 4px #EBB94D;
+  bottom: 0;
+  right: 0;
+}
+
+#contents3 #contents3-sub-title-wrap #contents3-sub-title {
   font-size: 20px;
   line-height: 40px;
   font-weight: 600;
   color: #333333;
-  padding-top: 40px;
 }
 
-#contents3 #contents3-title {
+#contents3 #contents3-sub-title-wrap #contents3-title {
   font-size: 28px;
   line-height: 40px;
   font-weight: 600;
@@ -564,7 +638,7 @@ header #header-contents #header-btn:hover {
 
 /*創業メンバー*/
 #member {
-  background-image: url(image/top-img.jpg);
+  background-image: url(image/teacherbg.jpg);
   height: 1390px;
   background-size: cover;
 }
@@ -653,7 +727,7 @@ header #header-contents #header-btn:hover {
   line-height: 26px;
   color: #ffffff;
   width: 280px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 #member #profile-flex2 {
@@ -723,13 +797,14 @@ header #header-contents #header-btn:hover {
   line-height: 26px;
   color: #ffffff;
   width: 280px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 /*ノマドエンジニアとして自由に稼ぐことは本当に可能なのか*/
 #evidence #evidence-title-wrap {
   background-color: #EBB94D;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 #evidence #evidence-title-wrap #evidence-icon {
@@ -749,8 +824,34 @@ header #header-contents #header-btn:hover {
   line-height: 40px;
   font-weight: 600;
   color: #ffffff;
-  padding: 15px 0 60px;
+  width: 860px;
+  padding: 30px;
+  margin: 40px auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 15px 0;
   font-weight: 600;
+}
+
+#evidence #evidence-title-wrap #evidence-title::before, #evidence #evidence-title-wrap #evidence-title::after {
+  content: '';
+  width: 45px;
+  height: 45px;
+  position: absolute;
+}
+
+#evidence #evidence-title-wrap #evidence-title::before {
+  border-left: solid 4px #ffffff;
+  border-top: solid 4px #ffffff;
+  top: 0;
+  left: 0;
+}
+
+#evidence #evidence-title-wrap #evidence-title::after {
+  border-right: solid 4px #ffffff;
+  border-bottom: solid 4px #ffffff;
+  bottom: 0;
+  right: 0;
 }
 
 #evidence #triangle {
@@ -840,7 +941,7 @@ header #header-contents #header-btn:hover {
 }
 
 #leaning-contents #leaning-contents-img {
-  background-image: url(image/top-img.jpg);
+  background-image: url(image/classbg.jpg);
   -o-object-fit: cover;
      object-fit: cover;
   height: 800px;
@@ -1037,7 +1138,11 @@ header #header-contents #header-btn:hover {
 
 /*なぜバンコクなのか？*/
 #place {
-  background-image: url(image/top-img.jpg);
+  background-image: url(image/bangkokbg.jpg);
+  background-size: cover;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #place #place-title {
@@ -1159,9 +1264,11 @@ header #header-contents #header-btn:hover {
 /*isaraはボランティアではありません*/
 #attention {
   text-align: center;
-  background-image: url(image/top-img.jpg);
+  background-image: url(image/specialdetail.jpg);
+  background-size: cover;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 530px;
 }
 
 #attention #attention-title {
@@ -1413,6 +1520,18 @@ footer #footer-copyright {
   font-size: 10px;
   line-height: 16px;
   font-weight: 300;
+}
+
+footer #sns-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer #sns-wrap .sns {
+  display: inline-block;
 }
 
 footer #design-develope-name {
