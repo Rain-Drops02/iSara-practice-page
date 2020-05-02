@@ -53,6 +53,34 @@ body {
     color: $color;
 }
 
+@mixin sub-title-box($color) {
+    width: 860px;
+    padding: 30px;
+    margin: 40px auto;
+    position: relative;
+    
+    &::before, &::after {
+        content: '';
+	    width: 45px;
+	    height: 45px;
+	    position: absolute;
+    }
+
+    &::before {
+        border-left: solid 4px $color;
+        border-top: solid 4px $color;
+        top: 0;
+        left: 0;
+    }
+    
+    &::after {
+        border-right: solid 4px $color;
+        border-bottom: solid 4px $color;
+        bottom: 0;
+        right: 0;
+    }
+}
+
 /*contact部分の@mixin*/
 
 @mixin under-top {
@@ -72,10 +100,6 @@ body {
     color: $color;
 }
 
-@mixin sub-title-span {/*確認*/
-    font-size: 60px;
-    padding: 60px;
-}
 
 @mixin local-title($color) {
     font-size: 28px;
@@ -305,33 +329,39 @@ header {
 
 #intro {
     text-align: center;
-
-    #intro-title {
-        @include local-title($black);/*確認*/
-        padding: 40px 80px;
-
-        .sub-title-span {
-            @include sub-title-span;
-        }
-    }
-
-    .intro-content {
-        @include main-font($black);
-        margin-bottom: 40px;
-        font-weight: 300;
-
-        #intro-content-span {
-            @include main-font($black);
-            margin-bottom: 40px;
-            font-weight: 700;
-            background: linear-gradient(transparent 70%, #EBB94D 70%);
-        }
-    }
+    position: relative;
 
     #intro-img {
         width: 100%;
-        height: 200px;
-        object-fit: cover;
+    }
+
+    #intro-wrap {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+
+        #intro-title {
+            @include local-title($black);
+            @include sub-title-box($main-color);
+            
+        }
+
+        .intro-content {
+            @include main-font($black);
+            margin-bottom: 40px;
+            font-weight: 300;
+
+            #intro-content-span {
+                @include main-font($black);
+                margin-bottom: 40px;
+                font-weight: 700;
+                background: linear-gradient(transparent 70%, #EBB94D 70%);
+            }
+        }
     }
     
 }
@@ -341,15 +371,12 @@ header {
 #desc {
     text-align: center;
     background-color: #FEF5E0;
-    padding-bottom: 70px;
+    padding: 40px 0 70px;
 
     #desc-title {
         @include local-title($black);
-        padding: 40px 80px 70px 80px;
-
-        .sub-title-span {
-            @include sub-title-span;
-        }
+        @include sub-title-box($main-color);
+        margin-top: 0px;
     }
 
     #desc-summary {
@@ -397,8 +424,10 @@ header {
     text-align: center;
     
     #contents1-img-wrap {
-        background-image: url(image/top-img.jpg);
+        background-image: url(image/aboutsecondbg.jpg);
+        width: 100%;
         height: 440px;
+        background-size: cover;
         object-fit: cover;
 
         #contents1-title {
@@ -441,7 +470,7 @@ header {
                 .programme-action {
                     @include article-note($black);
                     font-weight: 600;
-                    padding: 30px 0 25px;
+                    padding: 15px 0 25px;
                 }
             }
         }
@@ -501,17 +530,22 @@ header {
 #contents3 {
     text-align: center;
     background-color: #FEF5E0;
+    padding-top: 40px;
 
-    #contents3-sub-title {
-        font-size: 20px;
-        line-height: 40px;
-        font-weight: 600;
-        color: #333333;
-        padding-top: 40px;
-    }
+    #contents3-sub-title-wrap {
+        @include sub-title-box($main-color);
+        margin-top: 0px;
 
-    #contents3-title {
-        @include local-title($black);
+        #contents3-sub-title {
+            font-size: 20px;
+            line-height: 40px;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        #contents3-title {
+            @include local-title($black);
+        }
     }
 
     #three-merit-wrap {
@@ -578,6 +612,10 @@ header {
     }
 }
 
+
+
+
+
 /*創業メンバー*/
 
 @mixin profile-img {
@@ -593,7 +631,7 @@ header {
 }
 
 #member {
-    background-image: url(image/top-img.jpg);
+    background-image: url(image/teacherbg.jpg);
     height: 1390px;
     background-size: cover;
 
@@ -643,13 +681,13 @@ header {
                     @include article-note($white);
                     text-align: center;
                     padding: 15px 0;
-
                 }
 
+               
                 .profile-detail {
                     @include article-note($white);
                     width: 280px;
-                    padding-bottom: 50px;
+                    padding-bottom: 30px;
 
                 }
             }
@@ -697,14 +735,19 @@ header {
                 .profile-detail {
                     @include article-note($white);
                     width: 280px;
-                    padding-bottom: 50px;
+                    padding-bottom: 30px;
 
                 }
             }
         }
     }
-    
 }
+
+
+
+
+
+
 
 /*ノマドエンジニアとして自由に稼ぐことは本当に可能なのか*/
 
@@ -714,6 +757,7 @@ header {
     #evidence-title-wrap {
         background-color: $main-color;
         text-align: center;
+        padding-bottom: 40px;
         
 
         #evidence-icon {
@@ -730,7 +774,9 @@ header {
 
         #evidence-title {
             @include local-title($white);
-            padding: 15px 0 60px;
+            @include sub-title-box($white);
+            margin: 0 auto;
+            padding: 15px 0;
             font-weight: 600;
         }
 
@@ -809,13 +855,17 @@ header {
     }
 }
 
+
+
+
+
 /*isaraで学べる内容*/
 
 #leaning-contents {
     text-align: center;
 
     #leaning-contents-img {
-        background-image: url(image/top-img.jpg);
+        background-image: url(image/classbg.jpg);
         object-fit: cover;
         height: 800px;
     
@@ -915,6 +965,10 @@ header {
     }
 }
 
+
+
+
+
 /*受講の流れ*/
 
 #schedule {
@@ -981,10 +1035,18 @@ header {
     }
 }
 
+
+
+
+
+
 /*なぜバンコクなのか？*/
 
 #place {
-    background-image: url(image/top-img.jpg);
+    background-image: url(image/bangkokbg.jpg);
+    background-size: cover;
+    height: 500px;
+    object-fit: cover;
 
     #place-title {
         @include local-title($white);
@@ -1013,6 +1075,11 @@ header {
         padding-bottom: 95px;
     }
 }
+
+
+
+
+
 
 /*isara受講生への参加特典*/
 
@@ -1082,12 +1149,19 @@ header {
     }
 }
 
+
+
+
+
+
 /*isaraはボランティアではありません*/
 
 #attention {
     text-align: center;
-    background-image: url(image/top-img.jpg);
+    background-image: url(image/specialdetail.jpg);
+    background-size: cover;
     object-fit: cover;
+    height: 530px;
 
     #attention-title {
         @include local-title($white);
@@ -1304,9 +1378,11 @@ footer {
     }
 
     #sns-wrap {
+        display: flex;
+        justify-content: space-around;
 
         .sns {
-
+            display: inline-block;
         }
     }
 
