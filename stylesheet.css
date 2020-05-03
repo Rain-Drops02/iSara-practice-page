@@ -1515,6 +1515,7 @@ footer #footer-title {
   font-size: 10px;
   line-height: 16px;
   font-weight: 300;
+  padding-top: 25px;
 }
 
 footer #footer-copyright {
@@ -1559,6 +1560,7 @@ footer #design-develope-name {
   font-size: 10px;
   line-height: 16px;
   font-weight: 300;
+  padding-bottom: 40px;
 }
 
 /*以下リセットcss*/
