@@ -1469,6 +1469,7 @@ footer {
 
     #footer-title {
         @include footer-font($black);
+        padding-top: 25px;
     }
 
     #footer-copyright {
@@ -1506,6 +1507,7 @@ footer {
 
     #design-develope-name {
         @include footer-font($black);
+        padding-bottom: 40px;
     }
 }
 
