@@ -17,12 +17,21 @@ body {
     letter-spacing: 1.5px;
 }
 
+
+
+
+
+
 /*ヘッダー*/
 
 @mixin header-font {
     font-size: 14px;
     line-height: 22px;
 }
+
+
+
+
 
 /*トップ部分*/
 
@@ -81,6 +90,12 @@ body {
     }
 }
 
+
+
+
+
+
+
 /*contact部分の@mixin*/
 
 @mixin under-top {
@@ -90,6 +105,11 @@ body {
     color: #ffffff;
     padding-bottom: 45px;
 }
+
+
+
+
+
 
 
 /*エンジニアとして本当の自由を手に入れるためには  intro*/
@@ -109,6 +129,9 @@ body {
 }
 
 
+
+
+
 /*ノマド育成講座イサラとは  desc*/
 
 @mixin skills-comment {
@@ -117,6 +140,11 @@ body {
     color: #333333;
     font-weight: 300;
 }
+
+
+
+
+
 
 /*isaraで基本的なプログラミングスキルは教えません  contents1*/
 
@@ -144,6 +172,11 @@ body {
     color: $color;
 }
 
+
+
+
+
+
 /*footer*/
 
 @mixin footer-font($color) {
@@ -151,6 +184,11 @@ body {
     line-height: 16px;
     font-weight: 300;
 }
+
+
+
+
+/*ヘッダー  header*/
 
 
 .container {
@@ -205,6 +243,11 @@ header {
 
     }
 }
+
+
+
+
+
 
 
 /*トップ部分*/
@@ -324,6 +367,11 @@ header {
     }
 }
 
+
+
+
+
+
 /*エンジニアとして本当の自由を手に入れるためには  intro*/
 
 
@@ -365,6 +413,13 @@ header {
     }
     
 }
+
+
+
+
+
+
+
 
 /*ノマド育成講座イサラとは  desc*/
 
@@ -414,8 +469,14 @@ header {
 
     }
 
-   
+
 }
+
+
+
+
+
+
 
 /*isaraで基本的なプログラミングスキルは教えません  contents1*/
 
@@ -489,6 +550,12 @@ header {
     }
 }
 
+
+
+
+
+
+
 /*イサラで学べること*/
 
 #contents2 {
@@ -524,6 +591,12 @@ header {
         padding-bottom: 50px;
     }
 }
+
+
+
+
+
+
 
 /*イサラの3つのメリット*/
 
@@ -611,6 +684,8 @@ header {
 
     }
 }
+
+
 
 
 
@@ -969,6 +1044,7 @@ header {
 
 
 
+
 /*受講の流れ*/
 
 #schedule {
@@ -1034,6 +1110,8 @@ header {
         }
     }
 }
+
+
 
 
 
@@ -1154,6 +1232,8 @@ header {
 
 
 
+
+
 /*isaraはボランティアではありません*/
 
 #attention {
@@ -1188,6 +1268,12 @@ header {
         padding-bottom: 85px;
     }
 }
+
+
+
+
+
+
 
 /*創業者からのメッセージ*/
 
@@ -1247,6 +1333,12 @@ header {
     }
 }
 
+
+
+
+
+
+
 /*資料請求フォーム*/
 
 #contact2 {
@@ -1302,6 +1394,12 @@ header {
         }
     }
 }
+
+
+
+
+
+
 
 
 /*よくある質問*/
@@ -1378,11 +1476,31 @@ footer {
     }
 
     #sns-wrap {
+        margin: 15px auto 25px;
+        width: 220px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
-        .sns {
-            display: inline-block;
+        #footer-twitter {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 5px 8px 1px 6px;
+            color:$white;
+            background-color: #1B95E0;
+            border-radius: 3px;
+            height: 20px;
+            margin-top:15px;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+            
+            .my-white {
+                color: $white;
+            }
+        #footer-facebook {
+            margin-top: 15px;
+        }
+        
         }
     }
 
