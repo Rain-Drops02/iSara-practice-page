@@ -24,6 +24,7 @@ body {
 /*ノマド育成講座イサラとは  desc*/
 /*isaraで基本的なプログラミングスキルは教えません  contents1*/
 /*footer*/
+/*ヘッダー  header*/
 .container {
   width: 1170px;
   max-width: 100%;
@@ -1523,15 +1524,35 @@ footer #footer-copyright {
 }
 
 footer #sns-wrap {
+  margin: 15px auto 25px;
+  width: 220px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-footer #sns-wrap .sns {
-  display: inline-block;
+footer #sns-wrap #footer-twitter {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 8px 1px 6px;
+  color: #ffffff;
+  background-color: #1B95E0;
+  border-radius: 3px;
+  height: 20px;
+  margin-top: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+footer #sns-wrap #footer-twitter .my-white {
+  color: #ffffff;
+}
+
+footer #sns-wrap #footer-twitter #footer-facebook {
+  margin-top: 15px;
 }
 
 footer #design-develope-name {
